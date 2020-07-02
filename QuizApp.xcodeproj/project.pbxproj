@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		727AB68724ADDD9D00280FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB68624ADDD9D00280FAA /* AppDelegate.swift */; };
 		727AB68924ADDD9D00280FAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB68824ADDD9D00280FAA /* SceneDelegate.swift */; };
-		727AB68B24ADDD9D00280FAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB68A24ADDD9D00280FAA /* ViewController.swift */; };
-		727AB68E24ADDD9D00280FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727AB68C24ADDD9D00280FAA /* Main.storyboard */; };
 		727AB69024ADDDA000280FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727AB68F24ADDDA000280FAA /* Assets.xcassets */; };
 		727AB69324ADDDA000280FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727AB69124ADDDA000280FAA /* LaunchScreen.storyboard */; };
 		727AB69E24ADDDA000280FAA /* QuizAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB69D24ADDDA000280FAA /* QuizAppTests.swift */; };
+		727AB6A924ADE2E800280FAA /* QuestionViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB6A824ADE2E800280FAA /* QuestionViewControllerTest.swift */; };
+		727AB6AB24ADE3C900280FAA /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB6AA24ADE3C900280FAA /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +30,14 @@
 		727AB68324ADDD9D00280FAA /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727AB68624ADDD9D00280FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		727AB68824ADDD9D00280FAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		727AB68A24ADDD9D00280FAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		727AB68D24ADDD9D00280FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		727AB68F24ADDDA000280FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727AB69224ADDDA000280FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		727AB69424ADDDA000280FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		727AB69924ADDDA000280FAA /* QuizAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		727AB69D24ADDDA000280FAA /* QuizAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppTests.swift; sourceTree = "<group>"; };
 		727AB69F24ADDDA000280FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		727AB6A824ADE2E800280FAA /* QuestionViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerTest.swift; sourceTree = "<group>"; };
+		727AB6AA24ADE3C900280FAA /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,7 @@
 			children = (
 				727AB68624ADDD9D00280FAA /* AppDelegate.swift */,
 				727AB68824ADDD9D00280FAA /* SceneDelegate.swift */,
-				727AB68A24ADDD9D00280FAA /* ViewController.swift */,
-				727AB68C24ADDD9D00280FAA /* Main.storyboard */,
+				727AB6AA24ADE3C900280FAA /* QuestionViewController.swift */,
 				727AB68F24ADDDA000280FAA /* Assets.xcassets */,
 				727AB69124ADDDA000280FAA /* LaunchScreen.storyboard */,
 				727AB69424ADDDA000280FAA /* Info.plist */,
@@ -94,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				727AB69D24ADDDA000280FAA /* QuizAppTests.swift */,
+				727AB6A824ADE2E800280FAA /* QuestionViewControllerTest.swift */,
 				727AB69F24ADDDA000280FAA /* Info.plist */,
 			);
 			path = QuizAppTests;
@@ -182,7 +182,6 @@
 			files = (
 				727AB69324ADDDA000280FAA /* LaunchScreen.storyboard in Resources */,
 				727AB69024ADDDA000280FAA /* Assets.xcassets in Resources */,
-				727AB68E24ADDD9D00280FAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				727AB68B24ADDD9D00280FAA /* ViewController.swift in Sources */,
 				727AB68724ADDD9D00280FAA /* AppDelegate.swift in Sources */,
 				727AB68924ADDD9D00280FAA /* SceneDelegate.swift in Sources */,
+				727AB6AB24ADE3C900280FAA /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727AB6A924ADE2E800280FAA /* QuestionViewControllerTest.swift in Sources */,
 				727AB69E24ADDDA000280FAA /* QuizAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,14 +225,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		727AB68C24ADDD9D00280FAA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				727AB68D24ADDD9D00280FAA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		727AB69124ADDDA000280FAA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
