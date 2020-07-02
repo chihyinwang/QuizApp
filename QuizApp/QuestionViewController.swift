@@ -14,6 +14,7 @@ class QuestionViewController: UITableViewController {
     var headerLabel = UILabel()
     private var question: String = ""
     private var options: [String] = []
+    private let reuseIdentifier = "Cell"
     
     convenience init(question: String, options: [String]) {
         self.init()
@@ -21,7 +22,7 @@ class QuestionViewController: UITableViewController {
         self.options = options
     }
     
-    override func viewDidLoad() { 
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         headerLabel.text = question
@@ -35,5 +36,12 @@ class QuestionViewController: UITableViewController {
         let cell = UITableViewCell()
         cell.textLabel?.text = options[indexPath.row]
         return cell
+    }
+    
+    private func dequeueCell(in tableView: UITableView) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) {
+            return cell
+        }
+        return UITableViewCell.init(style: .default, reuseIdentifier: reuseIdentifier)
     }
 }
