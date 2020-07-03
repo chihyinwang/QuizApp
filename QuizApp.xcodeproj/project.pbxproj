@@ -16,6 +16,10 @@
 		72E0E76F24AEFFB600022278 /* ResultsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E76E24AEFFB600022278 /* ResultsViewControllerTest.swift */; };
 		72E0E77124AF002D00022278 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77024AF002D00022278 /* ResultsViewController.swift */; };
 		72E0E77324AF06CD00022278 /* TableViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77224AF06CD00022278 /* TableViewHelpers.swift */; };
+		72E0E77524AF18ED00022278 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77424AF18ED00022278 /* extensions.swift */; };
+		72E0E77724AF1AFF00022278 /* CorrectAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77624AF1AFF00022278 /* CorrectAnswerCell.swift */; };
+		72E0E77924AF1B1100022278 /* WrongAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77824AF1B1100022278 /* WrongAnswerCell.swift */; };
+		72E0E77B24AF1B3000022278 /* PresentableAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77A24AF1B3000022278 /* PresentableAnswer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		72E0E76E24AEFFB600022278 /* ResultsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewControllerTest.swift; sourceTree = "<group>"; };
 		72E0E77024AF002D00022278 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		72E0E77224AF06CD00022278 /* TableViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelpers.swift; sourceTree = "<group>"; };
+		72E0E77424AF18ED00022278 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		72E0E77624AF1AFF00022278 /* CorrectAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerCell.swift; sourceTree = "<group>"; };
+		72E0E77824AF1B1100022278 /* WrongAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongAnswerCell.swift; sourceTree = "<group>"; };
+		72E0E77A24AF1B3000022278 /* PresentableAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableAnswer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,10 @@
 				727AB68824ADDD9D00280FAA /* SceneDelegate.swift */,
 				727AB6AA24ADE3C900280FAA /* QuestionViewController.swift */,
 				72E0E77024AF002D00022278 /* ResultsViewController.swift */,
+				72E0E77624AF1AFF00022278 /* CorrectAnswerCell.swift */,
+				72E0E77824AF1B1100022278 /* WrongAnswerCell.swift */,
+				72E0E77A24AF1B3000022278 /* PresentableAnswer.swift */,
+				72E0E77424AF18ED00022278 /* extensions.swift */,
 				727AB68F24ADDDA000280FAA /* Assets.xcassets */,
 				727AB69124ADDDA000280FAA /* LaunchScreen.storyboard */,
 				727AB69424ADDDA000280FAA /* Info.plist */,
@@ -205,10 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E0E77524AF18ED00022278 /* extensions.swift in Sources */,
 				727AB68724ADDD9D00280FAA /* AppDelegate.swift in Sources */,
+				72E0E77924AF1B1100022278 /* WrongAnswerCell.swift in Sources */,
 				727AB68924ADDD9D00280FAA /* SceneDelegate.swift in Sources */,
 				727AB6AB24ADE3C900280FAA /* QuestionViewController.swift in Sources */,
+				72E0E77724AF1AFF00022278 /* CorrectAnswerCell.swift in Sources */,
 				72E0E77124AF002D00022278 /* ResultsViewController.swift in Sources */,
+				72E0E77B24AF1B3000022278 /* PresentableAnswer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
