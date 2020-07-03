@@ -9,6 +9,6 @@
 import UIKit
 
 class CorrectAnswerCell: UITableViewCell {
-    let questionLabel = UILabel()
-    let answerLabel = UILabel()
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var answerLabel: UILabel!
 }

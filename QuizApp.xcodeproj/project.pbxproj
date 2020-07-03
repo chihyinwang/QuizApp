@@ -20,6 +20,8 @@
 		72E0E77724AF1AFF00022278 /* CorrectAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77624AF1AFF00022278 /* CorrectAnswerCell.swift */; };
 		72E0E77924AF1B1100022278 /* WrongAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77824AF1B1100022278 /* WrongAnswerCell.swift */; };
 		72E0E77B24AF1B3000022278 /* PresentableAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77A24AF1B3000022278 /* PresentableAnswer.swift */; };
+		72E0E77F24AF1EA200022278 /* CorrectAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E0E77E24AF1EA200022278 /* CorrectAnswerCell.xib */; };
+		72E0E78124AF1F0800022278 /* WrongAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E0E78024AF1F0800022278 /* WrongAnswerCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		72E0E77624AF1AFF00022278 /* CorrectAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerCell.swift; sourceTree = "<group>"; };
 		72E0E77824AF1B1100022278 /* WrongAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongAnswerCell.swift; sourceTree = "<group>"; };
 		72E0E77A24AF1B3000022278 /* PresentableAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableAnswer.swift; sourceTree = "<group>"; };
+		72E0E77E24AF1EA200022278 /* CorrectAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CorrectAnswerCell.xib; sourceTree = "<group>"; };
+		72E0E78024AF1F0800022278 /* WrongAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongAnswerCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +100,9 @@
 				727AB6AA24ADE3C900280FAA /* QuestionViewController.swift */,
 				72E0E77024AF002D00022278 /* ResultsViewController.swift */,
 				72E0E77624AF1AFF00022278 /* CorrectAnswerCell.swift */,
+				72E0E77E24AF1EA200022278 /* CorrectAnswerCell.xib */,
 				72E0E77824AF1B1100022278 /* WrongAnswerCell.swift */,
+				72E0E78024AF1F0800022278 /* WrongAnswerCell.xib */,
 				72E0E77A24AF1B3000022278 /* PresentableAnswer.swift */,
 				72E0E77424AF18ED00022278 /* extensions.swift */,
 				727AB68F24ADDDA000280FAA /* Assets.xcassets */,
@@ -199,6 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				727AB69324ADDDA000280FAA /* LaunchScreen.storyboard in Resources */,
+				72E0E78124AF1F0800022278 /* WrongAnswerCell.xib in Resources */,
+				72E0E77F24AF1EA200022278 /* CorrectAnswerCell.xib in Resources */,
 				727AB69024ADDDA000280FAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

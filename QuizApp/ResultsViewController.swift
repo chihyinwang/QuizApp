@@ -25,6 +25,8 @@ class ResultsViewController: UITableViewController {
         headerLabel.text = summary
         tableView.register(CorrectAnswerCell.self)
         tableView.register(WrongAnswerCell.self)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.allowsSelection = false
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,6 +35,10 @@ class ResultsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return generateCell(answer: answers[indexPath.row])
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return headerLabel
     }
     
     func generateCell(answer: PresentableAnswer) -> UITableViewCell {

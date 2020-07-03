@@ -9,7 +9,9 @@
 import UIKit
 
 class WrongAnswerCell: UITableViewCell {
-    let questionLabel = UILabel()
-    let correctAnswerLabel = UILabel()
-    let wrongAnswerLabel = UILabel()
+    
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var correctAnswerLabel: UILabel!
+    @IBOutlet weak var wrongAnswerLabel: UILabel!
+    
 }
