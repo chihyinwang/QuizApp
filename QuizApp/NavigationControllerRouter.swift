@@ -10,7 +10,7 @@ import UIKit
 import QuizEngine
 
 protocol ViewControllerFactory {
-    func questionViewController(question: String, answerCallback: (String) -> Void) -> UIViewController
+    func questionViewController(question: String, answerCallback: @escaping (String) -> Void) -> UIViewController
 }
 
 class NavigationControllerRouter: Router {
