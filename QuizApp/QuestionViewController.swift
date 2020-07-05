@@ -12,8 +12,8 @@ import UIKit
 class QuestionViewController: UITableViewController {
     
     var headerLabel = UILabel()
-    private var question: String = ""
-    private var options: [String] = []
+    private(set) var question: String = ""
+    private(set) var options: [String] = []
     private var selection: (([String]) -> Void)? = nil
     private let reuseIdentifier = "Cell"
     
