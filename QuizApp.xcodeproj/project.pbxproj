@@ -19,6 +19,8 @@
 		72CD6C7324B30CFB0061648B /* ResultsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C7224B30CFB0061648B /* ResultsPresenterTest.swift */; };
 		72CD6C7524B30D9B0061648B /* ResultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C7424B30D9B0061648B /* ResultHelper.swift */; };
 		72CD6C7724B30ED00061648B /* ResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C7624B30ED00061648B /* ResultsPresenter.swift */; };
+		72CD6C7924B32BA40061648B /* QuestionPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C7824B32BA40061648B /* QuestionPresenterTest.swift */; };
+		72CD6C7B24B32C110061648B /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C7A24B32C110061648B /* QuestionPresenter.swift */; };
 		72E0E76F24AEFFB600022278 /* ResultsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E76E24AEFFB600022278 /* ResultsViewControllerTest.swift */; };
 		72E0E77124AF002D00022278 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77024AF002D00022278 /* ResultsViewController.swift */; };
 		72E0E77324AF06CD00022278 /* TableViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77224AF06CD00022278 /* TableViewHelpers.swift */; };
@@ -77,6 +79,8 @@
 		72CD6C7224B30CFB0061648B /* ResultsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenterTest.swift; sourceTree = "<group>"; };
 		72CD6C7424B30D9B0061648B /* ResultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultHelper.swift; sourceTree = "<group>"; };
 		72CD6C7624B30ED00061648B /* ResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenter.swift; sourceTree = "<group>"; };
+		72CD6C7824B32BA40061648B /* QuestionPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTest.swift; sourceTree = "<group>"; };
+		72CD6C7A24B32C110061648B /* QuestionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
 		72E0E76E24AEFFB600022278 /* ResultsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewControllerTest.swift; sourceTree = "<group>"; };
 		72E0E77024AF002D00022278 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		72E0E77224AF06CD00022278 /* TableViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelpers.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				72CD6C6C24B1B3770061648B /* ViewControllerFactory.swift */,
 				72CD6C7024B1B4530061648B /* iOSViewControllerFactory.swift */,
 				72CD6C7624B30ED00061648B /* ResultsPresenter.swift */,
+				72CD6C7A24B32C110061648B /* QuestionPresenter.swift */,
 				72E0E77424AF18ED00022278 /* extensions.swift */,
 				727AB68F24ADDDA000280FAA /* Assets.xcassets */,
 				727AB69124ADDDA000280FAA /* LaunchScreen.storyboard */,
@@ -165,6 +170,7 @@
 				72E0E7BA24B0919200022278 /* QuestionTest.swift */,
 				72CD6C6E24B1B3AB0061648B /* iOSViewControllerFactoryTest.swift */,
 				72CD6C7224B30CFB0061648B /* ResultsPresenterTest.swift */,
+				72CD6C7824B32BA40061648B /* QuestionPresenterTest.swift */,
 				72E0E77224AF06CD00022278 /* TableViewHelpers.swift */,
 				72CD6C7424B30D9B0061648B /* ResultHelper.swift */,
 				727AB69F24ADDDA000280FAA /* Info.plist */,
@@ -291,6 +297,7 @@
 				727AB6AB24ADE3C900280FAA /* QuestionViewController.swift in Sources */,
 				72E0E7BD24B0945E00022278 /* Question.swift in Sources */,
 				72E0E77724AF1AFF00022278 /* CorrectAnswerCell.swift in Sources */,
+				72CD6C7B24B32C110061648B /* QuestionPresenter.swift in Sources */,
 				72CD6C7124B1B4530061648B /* iOSViewControllerFactory.swift in Sources */,
 				72E0E7B924B0828E00022278 /* NavigationControllerRouter.swift in Sources */,
 				72E0E77124AF002D00022278 /* ResultsViewController.swift in Sources */,
@@ -307,6 +314,7 @@
 				72CD6C7324B30CFB0061648B /* ResultsPresenterTest.swift in Sources */,
 				72E0E7B724B07C3F00022278 /* NavigationControllerRouterTest.swift in Sources */,
 				727AB6A924ADE2E800280FAA /* QuestionViewControllerTest.swift in Sources */,
+				72CD6C7924B32BA40061648B /* QuestionPresenterTest.swift in Sources */,
 				72CD6C7524B30D9B0061648B /* ResultHelper.swift in Sources */,
 				72E0E77324AF06CD00022278 /* TableViewHelpers.swift in Sources */,
 				72E0E76F24AEFFB600022278 /* ResultsViewControllerTest.swift in Sources */,
