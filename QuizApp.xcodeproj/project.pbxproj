@@ -35,7 +35,6 @@
 		72E0E7B724B07C3F00022278 /* NavigationControllerRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7B624B07C3F00022278 /* NavigationControllerRouterTest.swift */; };
 		72E0E7B924B0828E00022278 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7B824B0828E00022278 /* NavigationControllerRouter.swift */; };
 		72E0E7BB24B0919200022278 /* QuestionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7BA24B0919200022278 /* QuestionTest.swift */; };
-		72E0E7BD24B0945E00022278 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7BC24B0945E00022278 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +93,6 @@
 		72E0E7B624B07C3F00022278 /* NavigationControllerRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTest.swift; sourceTree = "<group>"; };
 		72E0E7B824B0828E00022278 /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
 		72E0E7BA24B0919200022278 /* QuestionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTest.swift; sourceTree = "<group>"; };
-		72E0E7BC24B0945E00022278 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +139,6 @@
 				727AB68624ADDD9D00280FAA /* AppDelegate.swift */,
 				727AB68824ADDD9D00280FAA /* SceneDelegate.swift */,
 				72E0E7B824B0828E00022278 /* NavigationControllerRouter.swift */,
-				72E0E7BC24B0945E00022278 /* Question.swift */,
 				727AB6AA24ADE3C900280FAA /* QuestionViewController.swift */,
 				72E0E77024AF002D00022278 /* ResultsViewController.swift */,
 				72E0E77624AF1AFF00022278 /* CorrectAnswerCell.swift */,
@@ -295,7 +292,6 @@
 				72E0E77924AF1B1100022278 /* WrongAnswerCell.swift in Sources */,
 				727AB68924ADDD9D00280FAA /* SceneDelegate.swift in Sources */,
 				727AB6AB24ADE3C900280FAA /* QuestionViewController.swift in Sources */,
-				72E0E7BD24B0945E00022278 /* Question.swift in Sources */,
 				72E0E77724AF1AFF00022278 /* CorrectAnswerCell.swift in Sources */,
 				72CD6C7B24B32C110061648B /* QuestionPresenter.swift in Sources */,
 				72CD6C7124B1B4530061648B /* iOSViewControllerFactory.swift in Sources */,
