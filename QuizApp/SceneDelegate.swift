@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         let question1 = Question.singleAnswer("What's Bill's favorite color?")
-        let question2 = Question.singleAnswer("What's Bill's favorite brand?")
+        let question2 = Question.multipleAnswer("What's Bill's favorite brand?")
         let questions = [question1, question2]
         
         let option101 = "Maroon"
@@ -33,7 +33,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let option204 = "Haider Ackermann"
         let options2 = [option201, option202, option203, option204]
         
-        let correctAnswers = [question1: [option103], question2: [option201]]
+        let correctAnswers = [question1: [option103], question2: [option201, option202, option204]]
         
         let navigationController = UINavigationController()
         let factory = iOSViewControllerFactory(questions: questions, options: [question1: options1, question2: options2], correctAnswers: correctAnswers)
