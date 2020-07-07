@@ -27,19 +27,16 @@ class iOSViewControllerFactory: ViewControllerFactory {
     private func questionViewController(for question: Question<String>, options: [String], answerCallback: @escaping ([String]) -> Void) -> UIViewController {
         switch question {
         case .singleAnswer(let value):
-            return questionViewController(question: question, questionValue: value, options: options, answerCallback: answerCallback)
+            return questionViewController(question: question, questionValue: value, options: options, allowsMultipleSelection: false, answerCallback: answerCallback)
         case .multipleAnswer(let value):
-            let controller = questionViewController(question: question, questionValue: value, options: options, answerCallback: answerCallback)
-            _ = controller.view
-            controller.tableView.allowsMultipleSelection = true
-            return controller
+            return questionViewController(question: question, questionValue: value, options: options, allowsMultipleSelection: true, answerCallback: answerCallback)
         }
     }
     
-    private func questionViewController(question: Question<String>, questionValue: String, options: [String], answerCallback: @escaping ([String]) -> Void) -> QuestionViewController {
+    private func questionViewController(question: Question<String>, questionValue: String, options: [String], allowsMultipleSelection: Bool, answerCallback: @escaping ([String]) -> Void) -> QuestionViewController {
         
         let presenter = QuestionPresenter(questions: questions, question: question)
-        let controller = QuestionViewController(question: questionValue, options: options, selection: answerCallback)
+        let controller = QuestionViewController(question: questionValue, options: options, allowsMultipleSelection: allowsMultipleSelection, selection: answerCallback)
         controller.title = presenter.title
         return controller
     }
