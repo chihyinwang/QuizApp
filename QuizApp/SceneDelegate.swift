@@ -7,27 +7,41 @@
 //
 
 import UIKit
+import QuizEngine
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var game: Game<Question<String>, [String], NavigationControllerRouter>?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
         let window = UIWindow(windowScene: windowScene)
         
-//        let vc = QuestionViewController(question: "First Question", options: ["A1", "A2"]) {
-//            print($0)
-//        }
-//        vc.tableView.allowsMultipleSelection = false
+        let question1 = Question.singleAnswer("What's Bill's favorite color?")
+        let question2 = Question.singleAnswer("What's Bill's favorite brand?")
+        let questions = [question1, question2]
         
-        let vc = ResultsViewController(summary: "You got 1/2 correct", answers: [
-            PresentableAnswer(question: "Question1Question1Question1Question1Question1Question1Question1Question1Question1Question1Question1Question1Question1Question1Question1", answer: "goodgoodgoodgoodgoodgoodgoo", wrongAnswer: nil),
-            PresentableAnswer(question: "Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2Question2", answer: "good", wrongAnswer: "badbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbad")
-        ])
+        let option101 = "Maroon"
+        let option102 = "Navy"
+        let option103 = "Black"
+        let options1 = [option101, option102, option103]
         
-        window.rootViewController = vc
+        let option201 = "Maison Martin Margiela"
+        let option202 = "Christian Dior"
+        let option203 = "Raf Simons"
+        let option204 = "Haider Ackermann"
+        let options2 = [option201, option202, option203, option204]
+        
+        let correctAnswers = [question1: [option103], question2: [option201]]
+        
+        let navigationController = UINavigationController()
+        let factory = iOSViewControllerFactory(questions: questions, options: [question1: options1, question2: options2], correctAnswers: correctAnswers)
+        let router = NavigationControllerRouter(navigationController, factory: factory)
+        
+        game = startGame(questions: questions, router: router, correctAnswer: correctAnswers)
+        
+        window.rootViewController = navigationController
         self.window = window
         window.makeKeyAndVisible()
     }
