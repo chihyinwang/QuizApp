@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7267A25D24B47C0C000F8D5A /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7267A25C24B47C0C000F8D5A /* QuizEngine.framework */; };
+		7267A25E24B47C0C000F8D5A /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7267A25C24B47C0C000F8D5A /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		727AB68724ADDD9D00280FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB68624ADDD9D00280FAA /* AppDelegate.swift */; };
 		727AB68924ADDD9D00280FAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB68824ADDD9D00280FAA /* SceneDelegate.swift */; };
 		727AB69024ADDDA000280FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727AB68F24ADDDA000280FAA /* Assets.xcassets */; };
@@ -30,8 +32,6 @@
 		72E0E77B24AF1B3000022278 /* PresentableAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E77A24AF1B3000022278 /* PresentableAnswer.swift */; };
 		72E0E77F24AF1EA200022278 /* CorrectAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E0E77E24AF1EA200022278 /* CorrectAnswerCell.xib */; };
 		72E0E78124AF1F0800022278 /* WrongAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E0E78024AF1F0800022278 /* WrongAnswerCell.xib */; };
-		72E0E7B324B07B5B00022278 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E0E7B224B07B5B00022278 /* QuizEngine.framework */; };
-		72E0E7B424B07B5B00022278 /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72E0E7B224B07B5B00022278 /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		72E0E7B724B07C3F00022278 /* NavigationControllerRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7B624B07C3F00022278 /* NavigationControllerRouterTest.swift */; };
 		72E0E7B924B0828E00022278 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7B824B0828E00022278 /* NavigationControllerRouter.swift */; };
 		72E0E7BB24B0919200022278 /* QuestionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7BA24B0919200022278 /* QuestionTest.swift */; };
@@ -48,13 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		72E0E7B524B07B5B00022278 /* Embed Frameworks */ = {
+		7267A25F24B47C0C000F8D5A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				72E0E7B424B07B5B00022278 /* QuizEngine.framework in Embed Frameworks */,
+				7267A25E24B47C0C000F8D5A /* QuizEngine.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7267A25C24B47C0C000F8D5A /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		727AB68324ADDD9D00280FAA /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727AB68624ADDD9D00280FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		727AB68824ADDD9D00280FAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		72E0E77A24AF1B3000022278 /* PresentableAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableAnswer.swift; sourceTree = "<group>"; };
 		72E0E77E24AF1EA200022278 /* CorrectAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CorrectAnswerCell.xib; sourceTree = "<group>"; };
 		72E0E78024AF1F0800022278 /* WrongAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongAnswerCell.xib; sourceTree = "<group>"; };
-		72E0E7B224B07B5B00022278 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E0E7B624B07C3F00022278 /* NavigationControllerRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTest.swift; sourceTree = "<group>"; };
 		72E0E7B824B0828E00022278 /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
 		72E0E7BA24B0919200022278 /* QuestionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTest.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72E0E7B324B07B5B00022278 /* QuizEngine.framework in Frameworks */,
+				7267A25D24B47C0C000F8D5A /* QuizEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +289,21 @@
 			path = Routing;
 			sourceTree = "<group>";
 		};
+		7267A25B24B47C0C000F8D5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7267A25C24B47C0C000F8D5A /* QuizEngine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		727AB67A24ADDD9D00280FAA = {
 			isa = PBXGroup;
 			children = (
 				727AB68524ADDD9D00280FAA /* QuizApp */,
 				727AB69C24ADDDA000280FAA /* QuizAppTests */,
 				727AB68424ADDD9D00280FAA /* Products */,
-				72E0E7B124B07B5B00022278 /* Frameworks */,
+				7267A25B24B47C0C000F8D5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -335,14 +343,6 @@
 			path = QuizAppTests;
 			sourceTree = "<group>";
 		};
-		72E0E7B124B07B5B00022278 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				72E0E7B224B07B5B00022278 /* QuizEngine.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,7 +353,7 @@
 				727AB67F24ADDD9D00280FAA /* Sources */,
 				727AB68024ADDD9D00280FAA /* Frameworks */,
 				727AB68124ADDD9D00280FAA /* Resources */,
-				72E0E7B524B07B5B00022278 /* Embed Frameworks */,
+				7267A25F24B47C0C000F8D5A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
