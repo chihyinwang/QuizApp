@@ -9,10 +9,10 @@
 import UIKit
 
 class ResultsViewController: UITableViewController {
-    private var summary = ""
-    private var answers: [PresentableAnswer] = []
-    
     var headerLabel = UILabel()
+    
+    private(set) var summary = ""
+    private(set) var answers: [PresentableAnswer] = []
     
     convenience init(summary: String, answers: [PresentableAnswer]) {
         self.init()
