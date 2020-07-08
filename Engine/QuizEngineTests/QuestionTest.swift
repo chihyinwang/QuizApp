@@ -30,16 +30,4 @@ class QuestionTest: XCTestCase {
         XCTAssertEqual(sut.hashValue, type.hashValue)
     }
     
-    func test_equal_isEqual() {
-        XCTAssertEqual(Question.singleAnswer("A String"), Question.singleAnswer("A String"))
-        XCTAssertEqual(Question.multipleAnswer("A String"), Question.multipleAnswer("A String"))
-    }
-    
-    func test_equal_isNotEqual() {
-        XCTAssertNotEqual(Question.singleAnswer("A String"), Question.singleAnswer("Another String"))
-        XCTAssertNotEqual(Question.multipleAnswer("A String"), Question.multipleAnswer("Another String"))
-        XCTAssertNotEqual(Question.singleAnswer("A String"), Question.multipleAnswer("Another String"))
-        XCTAssertNotEqual(Question.singleAnswer("A String"), Question.multipleAnswer("A String"))
-    }
-    
 }
