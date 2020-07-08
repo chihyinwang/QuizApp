@@ -7,9 +7,13 @@
 //
 
 import Foundation
-import QuizEngine
+@testable import QuizEngine
 
 extension Result: Hashable {
+    
+    static func make(answers: [Question: Answer] = [:], score: Int = 0) -> Result {
+        return Result(answers: answers, score: score)
+    }
     
     // fake hashable for testing (Result in dictionary)
     public func hash(into hasher: inout Hasher) {
