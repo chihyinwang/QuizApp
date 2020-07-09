@@ -16,17 +16,17 @@ extension Result {
     }
 }
 
-extension Result: Equatable where Answer: Equatable {
+extension Result: Equatable where Answer: Hashable {
     
     public static func ==(lhs: Result<Question, Answer>, rhs: Result<Question, Answer>) -> Bool {
         return lhs.score == rhs.score && lhs.answers == rhs.answers
     }
 }
 
-extension Result: Hashable where Answer: Equatable {
+extension Result: Hashable where Answer: Hashable {
     
-    // fake hashable for testing (Result in dictionary)
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(1)
+        hasher.combine(answers)
+        hasher.combine(score)
     }
 }
