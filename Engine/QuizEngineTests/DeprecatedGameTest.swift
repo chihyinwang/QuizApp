@@ -13,8 +13,8 @@ import QuizEngine
 @available(*, deprecated)
 class DeprecatedGameTest: XCTestCase {
     
-    let router = RouterSpy()
-    var game: Game<String, String, RouterSpy>!
+    private let router = RouterSpy()
+    private var game: Game<String, String, RouterSpy>!
     
     override func setUpWithError() throws {
         try super.setUpWithError()
@@ -43,4 +43,21 @@ class DeprecatedGameTest: XCTestCase {
         XCTAssertEqual(router.routedResult!.score, 2)
     }
     
+    private class RouterSpy: Router {
+        typealias QuestionType = String
+        typealias Answer = String
+        
+        var routedResult: Result<QuestionType, Answer>? = nil
+        
+        var answerCallback: (String) -> Void = { _ in }
+        
+        func routeTo(question: QuestionType, answerCallback: @escaping (String) -> Void) {
+            self.answerCallback = answerCallback
+        }
+        
+        func routeTo(result: Result<QuestionType, Answer>) {
+            routedResult = result
+        }
+    }
+
 }
