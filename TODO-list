@@ -1,1 +1,5 @@
-- add deprecated message (Router protocol)
+- add deprecated message (Router protocol, startGame function, Game class)
+- move deprecated components to a designated file (Router protocol, startGame function, Game class)
+- what to do with the scoring function? (it's a leaky detail)
+- remove Hashable constraint from Question and make the Result type generic
+- 

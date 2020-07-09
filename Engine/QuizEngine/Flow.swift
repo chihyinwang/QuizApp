@@ -8,7 +8,10 @@
 
 import Foundation
 
-class Flow <Question, Answer, R: Router> where R.QuestionType == Question, R.Answer == Answer {
+class Flow <R: Router> {
+    typealias Question = R.QuestionType
+    typealias Answer = R.Answer
+    
     private let router: R
     private let questions: [Question]
     private var answers: [Question: Answer] = [:]
