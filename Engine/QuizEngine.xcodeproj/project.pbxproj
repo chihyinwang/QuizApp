@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		720CD96824B45F9000E03D2D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CD96724B45F9000E03D2D /* Question.swift */; };
 		7239F8E524B4619800659031 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CD96724B45F9000E03D2D /* Question.swift */; };
-		7239F8FE24B475C800659031 /* QuestionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239F8FD24B475C800659031 /* QuestionTest.swift */; };
 		72C2608A24A5DE6F00918E81 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C2608024A5DE6F00918E81 /* QuizEngine.framework */; };
 		72C2609B24A5E43E00918E81 /* FlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2609A24A5E43E00918E81 /* FlowTest.swift */; };
 		72C2609D24A5E44800918E81 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2609C24A5E44800918E81 /* Flow.swift */; };
@@ -47,7 +46,6 @@
 
 /* Begin PBXFileReference section */
 		720CD96724B45F9000E03D2D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		7239F8FD24B475C800659031 /* QuestionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTest.swift; sourceTree = "<group>"; };
 		72C2608024A5DE6F00918E81 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C2608424A5DE6F00918E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C2608924A5DE6F00918E81 /* QuizEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,7 +134,6 @@
 				72C2609A24A5E43E00918E81 /* FlowTest.swift */,
 				72E0E78624B0690E00022278 /* GameTest.swift */,
 				72E0E78824B06ADD00022278 /* RouterSpy.swift */,
-				7239F8FD24B475C800659031 /* QuestionTest.swift */,
 				72C2609024A5DE6F00918E81 /* Info.plist */,
 			);
 			path = QuizEngineTests;
@@ -330,7 +327,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C2609B24A5E43E00918E81 /* FlowTest.swift in Sources */,
-				7239F8FE24B475C800659031 /* QuestionTest.swift in Sources */,
 				72E0E78724B0690E00022278 /* GameTest.swift in Sources */,
 				72E0E78924B06ADD00022278 /* RouterSpy.swift in Sources */,
 			);
