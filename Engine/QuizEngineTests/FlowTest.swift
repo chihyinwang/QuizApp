@@ -13,31 +13,31 @@ class FlowTest: XCTestCase {
     
     private let delegate = DelegateSpy()
 
-    func test_start_withNoQuestions_doesNotRouteToQuestion() {
+    func test_start_withNoQuestions_doesNotDelegatesQuestionHandling() {
         makeSUT(questions: []).start()
         
         XCTAssertTrue(delegate.handledQuestions.isEmpty)
     }
     
-    func test_start_withOneQuestions_routesToCorrectQuestion_1() {
+    func test_start_withOneQuestions_delegatesCorrectQuestionHandling() {
         makeSUT(questions: ["Q1"]).start()
         
         XCTAssertEqual(delegate.handledQuestions, ["Q1"])
     }
     
-    func test_start_withOneQuestions_routesToCorrectQuestion_2() {
+    func test_start_withOneQuestions_delegatesAnotherCorrectQuestionHandling() {
         makeSUT(questions: ["Q2"]).start()
         
         XCTAssertEqual(delegate.handledQuestions, ["Q2"])
     }
     
-    func test_start_withTwoQuestions_routesToCorrectQuestion() {
+    func test_start_withTwoQuestions_delegatesCorrectQuestionHandling() {
         makeSUT(questions: ["Q1", "Q2"]).start()
         
         XCTAssertEqual(delegate.handledQuestions, ["Q1"])
     }
     
-    func test_startTwice_withTwoQuestions_routesToCorrectQuestionTwice() {
+    func test_startTwice_withTwoQuestions_delegatesFirstCorrectQuestionHandlingTwice() {
         let sut = makeSUT(questions: ["Q1", "Q2"])
 
         sut.start()
@@ -46,7 +46,7 @@ class FlowTest: XCTestCase {
         XCTAssertEqual(delegate.handledQuestions, ["Q1", "Q1"])
     }
     
-    func test_startAndAnswerFirstAndSecondQuestion_withThreeQuestions_routesToThirdQuestion() {
+    func test_startAndAnswerFirstAndSecondQuestion_withThreeQuestions_delegatesThirdQuestionHandling() {
         let sut = makeSUT(questions: ["Q1", "Q2", "Q3"])
         sut.start()
         
@@ -56,7 +56,7 @@ class FlowTest: XCTestCase {
         XCTAssertEqual(delegate.handledQuestions, ["Q1", "Q2", "Q3"])
     }
     
-    func test_startAndAnswerFirstQuestion_withOneQuestion_doesntRouteToNextQuestion() {
+    func test_startAndAnswerFirstQuestion_withOneQuestion_doesntDelegateNextQuestionHandling() {
         let sut = makeSUT(questions: ["Q1"])
         sut.start()
         
@@ -65,19 +65,19 @@ class FlowTest: XCTestCase {
         XCTAssertEqual(delegate.handledQuestions, ["Q1"])
     }
     
-    func test_start_withNoQuestion_routesToResult() {
+    func test_start_withNoQuestion_delegatesResultHandling() {
         makeSUT(questions: []).start()
         
         XCTAssertEqual(delegate.handledResult!.answers, [:])
     }
     
-    func test_startWithFirstQuestion_withOneQuestion_routesToResult() {
+    func test_startWithFirstQuestion_withOneQuestion_delegatesResultHandling() {
         makeSUT(questions: ["Q1"]).start()
         
         XCTAssertNil(delegate.handledResult)
     }
     
-    func test_startAndAnswerFirstQuestion_withTwoQuestion_doesntRoutesToResult() {
+    func test_startAndAnswerFirstQuestion_withTwoQuestion_doesntDelegatesResultHandling() {
         let sut = makeSUT(questions: ["Q1", "Q2"])
         sut.start()
         
@@ -86,7 +86,7 @@ class FlowTest: XCTestCase {
         XCTAssertNil(delegate.handledResult)
     }
     
-    func test_startAndAnswerFirstAndSecondQuestion_withTwoQuestion_routesToResult() {
+    func test_startAndAnswerFirstAndSecondQuestion_withTwoQuestion_delegatesResultHandling() {
         let sut = makeSUT(questions: ["Q1", "Q2"])
         sut.start()
         
