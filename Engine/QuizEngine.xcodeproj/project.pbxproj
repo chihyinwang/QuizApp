@@ -15,6 +15,9 @@
 		72C5761324B8595100034E70 /* QuizDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5761224B8595100034E70 /* QuizDelegate.swift */; };
 		72C5761524B85CDE00034E70 /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5761424B85CDE00034E70 /* QuizTest.swift */; };
 		72C5761724B8604A00034E70 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5761624B8604A00034E70 /* Quiz.swift */; };
+		72C5761824B8914A00034E70 /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5761424B85CDE00034E70 /* QuizTest.swift */; };
+		72C5761924B8915200034E70 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5761624B8604A00034E70 /* Quiz.swift */; };
+		72C5761A24B8915600034E70 /* QuizDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5761224B8595100034E70 /* QuizDelegate.swift */; };
 		72E0E78524B0684A00022278 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E78424B0684A00022278 /* Result.swift */; };
 		72E0E78724B0690E00022278 /* DeprecatedGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E78624B0690E00022278 /* DeprecatedGameTest.swift */; };
 		72E0E78B24B06B3300022278 /* DeprecatedGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E78A24B06B3300022278 /* DeprecatedGame.swift */; };
@@ -339,9 +342,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7239F8E524B4619800659031 /* Question.swift in Sources */,
+				72C5761924B8915200034E70 /* Quiz.swift in Sources */,
 				72E0E7AC24B07A0900022278 /* Result.swift in Sources */,
 				72E0E7AA24B07A0800022278 /* Flow.swift in Sources */,
 				72E0E7AD24B07A0900022278 /* DeprecatedGame.swift in Sources */,
+				72C5761A24B8915600034E70 /* QuizDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +356,7 @@
 			files = (
 				72E0E7AE24B07ACF00022278 /* FlowTest.swift in Sources */,
 				72E0E7AF24B07ACF00022278 /* DeprecatedGameTest.swift in Sources */,
+				72C5761824B8914A00034E70 /* QuizTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
