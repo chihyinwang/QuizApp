@@ -9,6 +9,15 @@
 import Foundation
 
 @available(*, deprecated)
+public protocol Router {
+    associatedtype QuestionType: Hashable
+    associatedtype Answer
+    
+    func routeTo(question: QuestionType, answerCallback: @escaping (Answer) -> Void)
+    func routeTo(result: Result<QuestionType, Answer>)
+}
+
+@available(*, deprecated)
 public class Game <Question, Answer, R: Router> {
     let flow: Any
     
