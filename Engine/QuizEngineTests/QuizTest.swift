@@ -8,17 +8,31 @@
 
 import Foundation
 import XCTest
-import QuizEngine
+@testable import QuizEngine
+
+final class Quiz {
+    private let flow: Any
+    
+    private init(flow: Any) {
+        self.flow = flow
+    }
+    
+    static func start<Question, Answer: Equatable, Delegate: QuizDelegate>(questions: [Question], delegate: Delegate, correctAnswer: [Question: Answer]) -> Quiz where Delegate.QuestionType == Question, Delegate.Answer == Answer {
+        let flow = Flow(questions: questions, delegate: delegate, scoring: { scoring($0, correctAnswer: correctAnswer) })
+        flow.start()
+        return Quiz(flow: flow)
+    }
+}
 
 class QuizTest: XCTestCase {
     
     private let delegate = DelegateSpy()
-    private var quiz: Game<String, String, DelegateSpy>!
+    private var quiz: Quiz!
     
     override func setUpWithError() throws {
         try super.setUpWithError()
         
-        quiz = startGame(questions: ["Q1", "Q2"], router: delegate, correctAnswer: ["Q1": "A1", "Q2": "A2"])
+        quiz = Quiz.start(questions: ["Q1", "Q2"], delegate: delegate, correctAnswer: ["Q1": "A1", "Q2": "A2"])
     }
     
     func test_startQuiz_answerZeroOutOfTwoCorrectly_scores1() {
@@ -42,7 +56,7 @@ class QuizTest: XCTestCase {
         XCTAssertEqual(delegate.handedResult!.score, 2)
     }
     
-    private class DelegateSpy: Router {
+    private class DelegateSpy: Router, QuizDelegate {
         typealias QuestionType = String
         typealias Answer = String
         
@@ -50,12 +64,20 @@ class QuizTest: XCTestCase {
         
         var answerCallback: (String) -> Void = { _ in }
         
-        func routeTo(question: QuestionType, answerCallback: @escaping (String) -> Void) {
+        func handle(question: String, answerCallback: @escaping (String) -> Void) {
             self.answerCallback = answerCallback
         }
         
-        func routeTo(result: Result<QuestionType, Answer>) {
+        func handle(result: Result<String, String>) {
             handedResult = result
+        }
+        
+        func routeTo(question: QuestionType, answerCallback: @escaping (String) -> Void) {
+            handle(question: question, answerCallback: answerCallback)
+        }
+        
+        func routeTo(result: Result<QuestionType, Answer>) {
+            handle(result: result)
         }
     }
 

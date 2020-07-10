@@ -50,7 +50,7 @@ private class QuizDelegateToRouterAdapter<R: Router>: QuizDelegate {
     }
 }
 
-private func scoring<Question: Hashable, Answer: Equatable>(_ answers: [Question: Answer], correctAnswer: [Question: Answer]) -> Int {
+func scoring<Question: Hashable, Answer: Equatable>(_ answers: [Question: Answer], correctAnswer: [Question: Answer]) -> Int {
     return answers.reduce(0) { (score, tuple) in
         return score + (correctAnswer[tuple.key] == tuple.value ? 1 : 0)
     }
