@@ -137,7 +137,7 @@ class FlowTest: XCTestCase {
         return sut
     }
     
-    private class DelegateSpy: Router {
+    private class DelegateSpy: Router, QuizDelegate {
         typealias QuestionType = String
         typealias Answer = String
         
@@ -146,13 +146,21 @@ class FlowTest: XCTestCase {
         
         var answerCallback: (String) -> Void = { _ in }
         
-        func routeTo(question: QuestionType, answerCallback: @escaping (String) -> Void) {
+        func handle(question: String, answerCallback: @escaping (String) -> Void) {
             routedQuestions.append(question)
             self.answerCallback = answerCallback
         }
         
-        func routeTo(result: Result<QuestionType, Answer>) {
+        func routeTo(question: QuestionType, answerCallback: @escaping (String) -> Void) {
+            handle(question: question, answerCallback: answerCallback)
+        }
+        
+        func handle(result: Result<String, String>) {
             routedResult = result
+        }
+        
+        func routeTo(result: Result<QuestionType, Answer>) {
+            handle(result: result)
         }
     }
 
