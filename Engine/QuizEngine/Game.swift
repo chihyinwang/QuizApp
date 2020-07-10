@@ -19,7 +19,7 @@ public class Game <Question, Answer, R: Router> {
 
 @available(*, deprecated)
 public func startGame<Question, Answer: Equatable, R: Router>(questions: [Question], router: R, correctAnswer: [Question: Answer]) -> Game<Question, Answer, R> where R.QuestionType == Question, R.Answer == Answer {
-    let flow = Flow(questions: questions, router: QuizDelegateToRouterAdapter(router), scoring: { scoring($0, correctAnswer: correctAnswer) })
+    let flow = Flow(questions: questions, delegate: QuizDelegateToRouterAdapter(router), scoring: { scoring($0, correctAnswer: correctAnswer) })
     flow.start()
     return Game(flow: flow)
 }
