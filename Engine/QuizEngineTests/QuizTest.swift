@@ -12,41 +12,41 @@ import QuizEngine
 
 class QuizTest: XCTestCase {
     
-    private let router = RouterSpy()
-    private var game: Game<String, String, RouterSpy>!
+    private let delegate = DelegateSpy()
+    private var quiz: Game<String, String, DelegateSpy>!
     
     override func setUpWithError() throws {
         try super.setUpWithError()
         
-        game = startGame(questions: ["Q1", "Q2"], router: router, correctAnswer: ["Q1": "A1", "Q2": "A2"])
+        quiz = startGame(questions: ["Q1", "Q2"], router: delegate, correctAnswer: ["Q1": "A1", "Q2": "A2"])
     }
     
-    func test_startGame_answerZeroOutOfTwoCorrectly_scores1() {
-        router.answerCallback("Wrong Answer")
-        router.answerCallback("Wrong Answer")
+    func test_startQuiz_answerZeroOutOfTwoCorrectly_scores1() {
+        delegate.answerCallback("Wrong Answer")
+        delegate.answerCallback("Wrong Answer")
         
-        XCTAssertEqual(router.routedResult!.score, 0)
+        XCTAssertEqual(delegate.handedResult!.score, 0)
     }
     
-    func test_startGame_answerOneOutOfTwoCorrectly_scores1() {
-        router.answerCallback("A1")
-        router.answerCallback("Wrong Answer")
+    func test_startQuiz_answerOneOutOfTwoCorrectly_scores1() {
+        delegate.answerCallback("A1")
+        delegate.answerCallback("Wrong Answer")
         
-        XCTAssertEqual(router.routedResult!.score, 1)
+        XCTAssertEqual(delegate.handedResult!.score, 1)
     }
     
-    func test_startGame_answerOneOutOfTwoCorrectly_scores2() {
-        router.answerCallback("A1")
-        router.answerCallback("A2")
+    func test_startQuiz_answerOneOutOfTwoCorrectly_scores2() {
+        delegate.answerCallback("A1")
+        delegate.answerCallback("A2")
         
-        XCTAssertEqual(router.routedResult!.score, 2)
+        XCTAssertEqual(delegate.handedResult!.score, 2)
     }
     
-    private class RouterSpy: Router {
+    private class DelegateSpy: Router {
         typealias QuestionType = String
         typealias Answer = String
         
-        var routedResult: Result<QuestionType, Answer>? = nil
+        var handedResult: Result<QuestionType, Answer>? = nil
         
         var answerCallback: (String) -> Void = { _ in }
         
@@ -55,7 +55,7 @@ class QuizTest: XCTestCase {
         }
         
         func routeTo(result: Result<QuestionType, Answer>) {
-            routedResult = result
+            handedResult = result
         }
     }
 
