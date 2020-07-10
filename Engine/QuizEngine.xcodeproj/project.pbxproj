@@ -14,6 +14,7 @@
 		72C2609D24A5E44800918E81 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2609C24A5E44800918E81 /* Flow.swift */; };
 		72C5761324B8595100034E70 /* QuizDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5761224B8595100034E70 /* QuizDelegate.swift */; };
 		72C5761524B85CDE00034E70 /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5761424B85CDE00034E70 /* QuizTest.swift */; };
+		72C5761724B8604A00034E70 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5761624B8604A00034E70 /* Quiz.swift */; };
 		72E0E78524B0684A00022278 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E78424B0684A00022278 /* Result.swift */; };
 		72E0E78724B0690E00022278 /* DeprecatedGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E78624B0690E00022278 /* DeprecatedGameTest.swift */; };
 		72E0E78B24B06B3300022278 /* DeprecatedGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E78A24B06B3300022278 /* DeprecatedGame.swift */; };
@@ -52,6 +53,7 @@
 		72C2609C24A5E44800918E81 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		72C5761224B8595100034E70 /* QuizDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDelegate.swift; sourceTree = "<group>"; };
 		72C5761424B85CDE00034E70 /* QuizTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTest.swift; sourceTree = "<group>"; };
+		72C5761624B8604A00034E70 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		72E0E78424B0684A00022278 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		72E0E78624B0690E00022278 /* DeprecatedGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedGameTest.swift; sourceTree = "<group>"; };
 		72E0E78A24B06B3300022278 /* DeprecatedGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedGame.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				72C2609C24A5E44800918E81 /* Flow.swift */,
 				72C5761224B8595100034E70 /* QuizDelegate.swift */,
+				72C5761624B8604A00034E70 /* Quiz.swift */,
 				72E0E78424B0684A00022278 /* Result.swift */,
 				720CD96724B45F9000E03D2D /* Question.swift */,
 				72E0E78A24B06B3300022278 /* DeprecatedGame.swift */,
@@ -314,6 +317,7 @@
 			files = (
 				720CD96824B45F9000E03D2D /* Question.swift in Sources */,
 				72E0E78524B0684A00022278 /* Result.swift in Sources */,
+				72C5761724B8604A00034E70 /* Quiz.swift in Sources */,
 				72C2609D24A5E44800918E81 /* Flow.swift in Sources */,
 				72E0E78B24B06B3300022278 /* DeprecatedGame.swift in Sources */,
 				72C5761324B8595100034E70 /* QuizDelegate.swift in Sources */,
