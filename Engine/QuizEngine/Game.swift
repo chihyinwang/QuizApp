@@ -9,19 +9,36 @@
 import Foundation
 
 @available(*, deprecated)
-public class Game <Question, Answer, R: Router> where R.QuestionType == Question, R.Answer == Answer {
-    let flow: Flow<R>
+public class Game <Question, Answer, R: Router> {
+    let flow: Any
     
-    init(flow: Flow<R>) {
+    init(flow: Any) {
         self.flow = flow
     }
 }
 
 @available(*, deprecated)
 public func startGame<Question, Answer: Equatable, R: Router>(questions: [Question], router: R, correctAnswer: [Question: Answer]) -> Game<Question, Answer, R> where R.QuestionType == Question, R.Answer == Answer {
-    let flow = Flow(questions: questions, router: router, scoring: { scoring($0, correctAnswer: correctAnswer) })
+    let flow = Flow(questions: questions, router: QuizDelegateToRouterAdapter(router), scoring: { scoring($0, correctAnswer: correctAnswer) })
     flow.start()
     return Game(flow: flow)
+}
+
+@available(*, deprecated)
+private class QuizDelegateToRouterAdapter<R: Router>: QuizDelegate {
+    private let router: R
+    
+    init(_ router: R) {
+        self.router = router
+    }
+    
+    func handle(question: R.QuestionType, answerCallback: @escaping (R.Answer) -> Void) {
+        router.routeTo(question: question, answerCallback: answerCallback)
+    }
+    
+    func handle(result: Result<R.QuestionType, R.Answer>) {
+        router.routeTo(result: result)
+    }
 }
 
 private func scoring<Question: Hashable, Answer: Equatable>(_ answers: [Question: Answer], correctAnswer: [Question: Answer]) -> Int {
