@@ -133,7 +133,7 @@ class FlowTest: XCTestCase {
             self.answerCompletion = completion
         }
         
-        func didCompleteQuiz(withAnswers answers: [(answers: String, answer: String)]) {
+        func didCompleteQuiz(withAnswers answers: [(question: String, answer: String)]) {
             completedQuizzes.append(answers)
         }
         

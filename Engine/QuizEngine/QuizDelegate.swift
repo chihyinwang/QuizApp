@@ -14,12 +14,12 @@ public protocol QuizDelegate {
     
     func answer(for question: QuestionType, completion: @escaping (Answer) -> Void)
     
-    func didCompleteQuiz(withAnswers: [(answers: QuestionType, answer: Answer)])
+    func didCompleteQuiz(withAnswers answers: [(question: QuestionType, answer: Answer)])
     
     @available(*, deprecated, message: "use didCompleteQuiz(withAnswers:) instead")
     func handle(result: Result<QuestionType, Answer>)
 }
 
 public extension QuizDelegate {
-    func didCompleteQuiz(withAnswers: [(answers: QuestionType, answer: Answer)]) {}
+    func didCompleteQuiz(withAnswers answers: [(question: QuestionType, answer: Answer)]) {}
 }
