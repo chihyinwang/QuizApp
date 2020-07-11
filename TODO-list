@@ -10,6 +10,6 @@
 
 - remove didCompleteQuiz implementation
 
-- Rename handledQuestions in the DelegateSpy
-
 - Rename Flow.newAnswers
+
+- Remove the Flow.scoring dependency
