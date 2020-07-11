@@ -41,8 +41,8 @@ private class QuizDelegateToRouterAdapter<R: Router>: QuizDelegate {
         self.router = router
     }
     
-    func handle(question: R.QuestionType, answerCallback: @escaping (R.Answer) -> Void) {
-        router.routeTo(question: question, answerCallback: answerCallback)
+    func answer(for question: R.QuestionType, completion: @escaping (R.Answer) -> Void) {
+        router.routeTo(question: question, answerCallback: completion)
     }
     
     func handle(result: Result<R.QuestionType, R.Answer>) {

@@ -12,6 +12,9 @@ public protocol QuizDelegate {
     associatedtype QuestionType: Hashable
     associatedtype Answer
     
-    func handle(question: QuestionType, answerCallback: @escaping (Answer) -> Void)
+//    func answer(for question: QuestionType, completion: @escaping (Answer) -> Void)
+//    func didCompleteQuiz(withAnswers: [(answers: QuestionType, answer: Answer)])
+    
+    func answer(for question: QuestionType, completion: @escaping (Answer) -> Void)
     func handle(result: Result<QuestionType, Answer>)
 }
