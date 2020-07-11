@@ -9,3 +9,7 @@
 - breakdown protocols into Delegate/Datasource
 
 - remove didCompleteQuiz implementation
+
+- Rename handledQuestions in the DelegateSpy
+
+- Rename Flow.newAnswers
