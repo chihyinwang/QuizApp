@@ -13,3 +13,5 @@
 - Rename Flow.newAnswers
 
 - Remove the Flow.scoring dependency
+
+- Remove duplicated code(DelegateSpy/assertEqual)
