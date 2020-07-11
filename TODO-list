@@ -1,5 +1,11 @@
 - add deprecated message (Router protocol, startGame function, Game class, QuizDelegateToRouterAdapter class)
-- move deprecated components to a designated file (Router protocol, startGame function, Game class, QuizDelegateToRouterAdapter class)
+
 - what to do with the scoring function? (it's a leaky detail)
+
 - remove Hashable constraint from Question and make the Result type generic
-- 
+
+- deprecate the Result type
+
+- breakdown protocols into Delegate/Datasource
+
+- remove didCompleteQuiz implementation
