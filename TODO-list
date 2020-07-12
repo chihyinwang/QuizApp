@@ -6,6 +6,4 @@
 
 - breakdown protocols into Delegate/Datasource
 
-- remove didCompleteQuiz implementation
-
 - Remove duplicated code(DelegateSpy/assertEqual)
