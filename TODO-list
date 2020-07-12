@@ -1,7 +1,3 @@
 - add deprecated message (Router protocol, startGame function, Game class, QuizDelegateToRouterAdapter class)
 
-- deprecate the Result type
-
 - breakdown protocols into Delegate/Datasource
-
-- Remove duplicated code(DelegateSpy/assertEqual)

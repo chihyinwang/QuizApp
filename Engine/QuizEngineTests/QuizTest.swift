@@ -41,21 +41,5 @@ class QuizTest: XCTestCase {
         assertEqual(delegate.completedQuizzes[0], [("Q1", "A1"), ("Q2", "A2")])
         assertEqual(delegate.completedQuizzes[1], [("Q1", "A1-1"), ("Q2", "A2-1")])
     }
-    
-    private class DelegateSpy: QuizDelegate {
-        typealias Question = String
-        typealias Answer = String
-        
-        var completedQuizzes: [[(String, String)]] = []
-        var answerCompletions: [(String) -> Void] = []
-        
-        func answer(for question: String, completion: @escaping (String) -> Void) {
-            self.answerCompletions.append(completion)
-        }
-        
-        func didCompleteQuiz(withAnswers answers: [(question: String, answer: String)]) {
-            completedQuizzes.append(answers)
-        }
-    }
 
 }
