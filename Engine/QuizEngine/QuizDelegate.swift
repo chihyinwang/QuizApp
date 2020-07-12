@@ -9,10 +9,10 @@
 import Foundation
 
 public protocol QuizDelegate {
-    associatedtype QuestionType: Hashable
+    associatedtype Question
     associatedtype Answer
     
-    func answer(for question: QuestionType, completion: @escaping (Answer) -> Void)
+    func answer(for question: Question, completion: @escaping (Answer) -> Void)
     
-    func didCompleteQuiz(withAnswers answers: [(question: QuestionType, answer: Answer)])
+    func didCompleteQuiz(withAnswers answers: [(question: Question, answer: Answer)])
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 class Flow <Delegate: QuizDelegate> {
-    typealias Question = Delegate.QuestionType
+    typealias Question = Delegate.Question
     typealias Answer = Delegate.Answer
     
     private let delegate: Delegate

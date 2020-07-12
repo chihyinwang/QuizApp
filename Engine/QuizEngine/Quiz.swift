@@ -16,7 +16,7 @@ public final class Quiz {
     }
     
     public static func start<Delegate: QuizDelegate>(
-        questions: [Delegate.QuestionType],
+        questions: [Delegate.Question],
         delegate: Delegate
     ) -> Quiz where Delegate.Answer: Equatable {
         let flow = Flow(questions: questions, delegate: delegate)

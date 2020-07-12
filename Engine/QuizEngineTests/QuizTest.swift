@@ -47,7 +47,7 @@ class QuizTest: XCTestCase {
     }
     
     private class DelegateSpy: QuizDelegate {
-        typealias QuestionType = String
+        typealias Question = String
         typealias Answer = String
         
         var completedQuizzes: [[(String, String)]] = []
