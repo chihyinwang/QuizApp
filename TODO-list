@@ -1,3 +1,5 @@
-- add deprecated message (Router protocol, startGame function, Game class, QuizDelegateToRouterAdapter class)
+- add deprecated message (Result struct)
 
 - breakdown protocols into Delegate/Datasource
+
+- implement a scoring behavior
