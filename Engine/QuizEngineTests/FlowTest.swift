@@ -140,7 +140,6 @@ class FlowTest: XCTestCase {
         var questionsAsked: [Question] = []
         var answerCompletions: [(String) -> Void] = []
         
-        var handledResult: Result<Question, Answer>? = nil
         var completedQuizzes: [[(String, String)]] = []
         
         func answer(for question: String, completion: @escaping (String) -> Void) {
