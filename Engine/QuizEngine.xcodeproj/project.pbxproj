@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		720CD96824B45F9000E03D2D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CD96724B45F9000E03D2D /* Question.swift */; };
 		7239F8E524B4619800659031 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CD96724B45F9000E03D2D /* Question.swift */; };
+		727291F524BAB4AC00B379BF /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727291F424BAB4AC00B379BF /* Assertions.swift */; };
 		72C2608A24A5DE6F00918E81 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C2608024A5DE6F00918E81 /* QuizEngine.framework */; };
 		72C2609B24A5E43E00918E81 /* FlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2609A24A5E43E00918E81 /* FlowTest.swift */; };
 		72C2609D24A5E44800918E81 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2609C24A5E44800918E81 /* Flow.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		720CD96724B45F9000E03D2D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		727291F424BAB4AC00B379BF /* Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
 		72C2608024A5DE6F00918E81 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C2608424A5DE6F00918E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C2608924A5DE6F00918E81 /* QuizEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 			children = (
 				72C2609A24A5E43E00918E81 /* FlowTest.swift */,
 				72C5761424B85CDE00034E70 /* QuizTest.swift */,
+				727291F424BAB4AC00B379BF /* Assertions.swift */,
 				72E0E78624B0690E00022278 /* DeprecatedGameTest.swift */,
 				72C2609024A5DE6F00918E81 /* Info.plist */,
 			);
@@ -328,6 +331,7 @@
 			files = (
 				72C2609B24A5E43E00918E81 /* FlowTest.swift in Sources */,
 				72E0E78724B0690E00022278 /* DeprecatedGameTest.swift in Sources */,
+				727291F524BAB4AC00B379BF /* Assertions.swift in Sources */,
 				72C5761524B85CDE00034E70 /* QuizTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
