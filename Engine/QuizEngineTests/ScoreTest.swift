@@ -33,12 +33,18 @@ class ScoreTest: XCTestCase {
         XCTAssertEqual(score, 2)
     }
     
+    func test_withUnequalSizeData() {
+        let score1 = BasicScore.score(for: ["", "", ""],comparingTo: ["", ""])
+        XCTAssertEqual(score1, 2)
+    }
+    
     private class BasicScore {
         static func score(for answers: [String], comparingTo correctAnswers: [String] = []) -> Int {
             if answers.isEmpty { return 0 }
             
             var score = 0
             for (index, answer) in answers.enumerated() {
+                if index >= correctAnswers.count { return score }
                 score += answer == correctAnswers[index] ? 1 : 0
             }
             
