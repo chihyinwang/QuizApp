@@ -1,5 +1,5 @@
-- add deprecated message (Result struct)
-
 - breakdown protocols into Delegate/Datasource
 
 - implement a scoring behavior
+
+- decide where should the scoring function live
