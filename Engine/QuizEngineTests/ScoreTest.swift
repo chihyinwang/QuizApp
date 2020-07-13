@@ -40,6 +40,13 @@ class ScoreTest: XCTestCase {
         XCTAssertEqual(score, 2)
     }
     
+    func test_withTooManyAnswers_oneMatchingAnswers_scoresOne() {
+        let score = BasicScore.score(
+            for: ["not matching answer", "another answers", "an extra answer"],
+            comparingTo: ["an answer", "another answers"])
+        XCTAssertEqual(score, 1)
+    }
+    
     private class BasicScore {
         static func score(for answers: [String], comparingTo correctAnswers: [String] = []) -> Int {
             if answers.isEmpty { return 0 }
