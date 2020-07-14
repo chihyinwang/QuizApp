@@ -36,7 +36,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let correctAnswers = [question1: [option103], question2: [option201, option202, option204]]
         
         let navigationController = UINavigationController()
-        let factory = iOSViewControllerFactory(questions: questions, options: [question1: options1, question2: options2], correctAnswers: correctAnswers)
+        let factory = iOSViewControllerFactory(
+            options: [question1: options1, question2: options2],
+            correctAnswers: [(question1, [option103]), (question2, [option201, option202, option204])])
         let router = NavigationControllerRouter(navigationController, factory: factory)
         
         game = startGame(questions: questions, router: router, correctAnswer: correctAnswers)
