@@ -1,7 +1,3 @@
 - breakdown protocols into Delegate/Datasource
 
-- Remove ResultsPresenter deprecated init
-
-- Remove iOSViewControllerFactory deprecated init
-
-- Make iOSViewControllerFactory correctAnswers be just data ( not closure )
+- Remove iOSViewControllerFactory resultsViewController(for result)
