@@ -38,7 +38,7 @@ class NavigationControllerRouter: Router, QuizDelegate {
     }
     
     func didCompleteQuiz(withAnswers answers: [(question: Question<String>, answer: [String])]) {
-        show(factory.resultViewController(for: answers.map { $0 }))
+        show(factory.resultViewController(for: answers))
     }
     
     func routeTo(result: Result<Question<String>, [String]>) {
