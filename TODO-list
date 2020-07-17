@@ -1,3 +1,1 @@
 - breakdown protocols into Delegate/Datasource
-
-- Remove iOSViewControllerFactory resultsViewController(for result)
