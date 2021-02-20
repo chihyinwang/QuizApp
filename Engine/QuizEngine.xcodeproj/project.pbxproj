@@ -101,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		724E1B7E25E1612500240430 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				727291F624BAB54B00B379BF /* DelegateSpy.swift */,
+				727291F424BAB4AC00B379BF /* Assertions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		72C2607624A5DE6F00918E81 = {
 			isa = PBXGroup;
 			children = (
@@ -137,10 +146,9 @@
 		72C2608D24A5DE6F00918E81 /* QuizEngineTests */ = {
 			isa = PBXGroup;
 			children = (
+				724E1B7E25E1612500240430 /* Helpers */,
 				72C2609A24A5E43E00918E81 /* FlowTest.swift */,
 				72C5761424B85CDE00034E70 /* QuizTest.swift */,
-				727291F424BAB4AC00B379BF /* Assertions.swift */,
-				727291F624BAB54B00B379BF /* DelegateSpy.swift */,
 				72E0E78624B0690E00022278 /* DeprecatedGameTest.swift */,
 				72C2609024A5DE6F00918E81 /* Info.plist */,
 			);
