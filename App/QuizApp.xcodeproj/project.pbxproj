@@ -129,9 +129,7 @@
 		7239F8E724B471BF00659031 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				72A9722025E48E380082B20D /* Helpers */,
-				7239F8E924B471D100659031 /* Result */,
-				7239F8E824B471C900659031 /* Question */,
+				72A9722725E490450082B20D /* UIKit */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -147,8 +145,8 @@
 		7239F8E924B471D100659031 /* Result */ = {
 			isa = PBXGroup;
 			children = (
-				72E0E77024AF002D00022278 /* ResultsViewController.swift */,
 				7239F8EA24B471DA00659031 /* Cells */,
+				72E0E77024AF002D00022278 /* ResultsViewController.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -210,8 +208,7 @@
 		7239F8F424B4731900659031 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				7239F8F624B4732200659031 /* Result */,
-				7239F8F524B4731D00659031 /* Question */,
+				72A9722825E490810082B20D /* UIKit */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -318,7 +315,6 @@
 			children = (
 				72AC4B2024BC1FC9001AF2FC /* Scoring */,
 				7239F8FC24B4737C00659031 /* Routing */,
-				7239F8FB24B4736C00659031 /* Helpers */,
 				7239F8F724B4734B00659031 /* Presentation */,
 				7239F8F424B4731900659031 /* UI */,
 				7239F8F324B4731000659031 /* Main */,
@@ -333,6 +329,26 @@
 				72A9722125E48E480082B20D /* UITableViewExtension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		72A9722725E490450082B20D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				72A9722025E48E380082B20D /* Helpers */,
+				7239F8E824B471C900659031 /* Question */,
+				7239F8E924B471D100659031 /* Result */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		72A9722825E490810082B20D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				7239F8FB24B4736C00659031 /* Helpers */,
+				7239F8F524B4731D00659031 /* Question */,
+				7239F8F624B4732200659031 /* Result */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		72AC4B1F24BC1FC3001AF2FC /* Scoring */ = {
