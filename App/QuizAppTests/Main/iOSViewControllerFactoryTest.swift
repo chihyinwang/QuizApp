@@ -117,7 +117,7 @@ class iOSViewControllerFactoryTest: XCTestCase {
     
     private func makeResults() -> (controller: ResultsViewController, presenter: ResultsPresenter) {
         let sut = makeSUT()
-        let controller = sut.resultViewController(for: correctAnswers) as! ResultsViewController
+        let controller = sut.resultsViewController(for: correctAnswers) as! ResultsViewController
         let presenter = ResultsPresenter(
             userAnswers: correctAnswers,
             correctAnswers: correctAnswers,
