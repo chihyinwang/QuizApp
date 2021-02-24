@@ -16,6 +16,7 @@
 		727AB6A924ADE2E800280FAA /* QuestionViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB6A824ADE2E800280FAA /* QuestionViewControllerTest.swift */; };
 		727AB6AB24ADE3C900280FAA /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB6AA24ADE3C900280FAA /* QuestionViewController.swift */; };
 		72A9722225E48E480082B20D /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9722125E48E480082B20D /* UITableViewExtension.swift */; };
+		72A9722C25E60CF10082B20D /* SingleAnswerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9722B25E60CF10082B20D /* SingleAnswerQuestion.swift */; };
 		72AC4B2224BC1FD1001AF2FC /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC4B2124BC1FD1001AF2FC /* ScoreTest.swift */; };
 		72AC4B2424BC1FDF001AF2FC /* BasicScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC4B2324BC1FDF001AF2FC /* BasicScore.swift */; };
 		72CD6C6D24B1B3770061648B /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C6C24B1B3770061648B /* ViewControllerFactory.swift */; };
@@ -74,6 +75,7 @@
 		727AB6A824ADE2E800280FAA /* QuestionViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerTest.swift; sourceTree = "<group>"; };
 		727AB6AA24ADE3C900280FAA /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		72A9722125E48E480082B20D /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		72A9722B25E60CF10082B20D /* SingleAnswerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAnswerQuestion.swift; sourceTree = "<group>"; };
 		72AC4B2124BC1FD1001AF2FC /* ScoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
 		72AC4B2324BC1FDF001AF2FC /* BasicScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicScore.swift; sourceTree = "<group>"; };
 		72CD6C6C24B1B3770061648B /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		7239F8E724B471BF00659031 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				72A9722A25E60CD90082B20D /* SwiftUI */,
 				72A9722725E490450082B20D /* UIKit */,
 			);
 			path = UI;
@@ -351,6 +354,14 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		72A9722A25E60CD90082B20D /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				72A9722B25E60CF10082B20D /* SingleAnswerQuestion.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		72AC4B1F24BC1FC3001AF2FC /* Scoring */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,6 +493,7 @@
 				72CD6C7124B1B4530061648B /* iOSViewControllerFactory.swift in Sources */,
 				72E0E7B924B0828E00022278 /* NavigationControllerRouter.swift in Sources */,
 				72E0E77124AF002D00022278 /* ResultsViewController.swift in Sources */,
+				72A9722C25E60CF10082B20D /* SingleAnswerQuestion.swift in Sources */,
 				72E0E77B24AF1B3000022278 /* PresentableAnswer.swift in Sources */,
 				72CD6C6D24B1B3770061648B /* ViewControllerFactory.swift in Sources */,
 			);
