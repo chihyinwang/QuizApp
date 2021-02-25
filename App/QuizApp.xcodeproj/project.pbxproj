@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		725025E225E7688500687E79 /* QuestionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725025E125E7688500687E79 /* QuestionHeader.swift */; };
 		7267A25D24B47C0C000F8D5A /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7267A25C24B47C0C000F8D5A /* QuizEngine.framework */; };
 		7267A25E24B47C0C000F8D5A /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7267A25C24B47C0C000F8D5A /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		727AB68724ADDD9D00280FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB68624ADDD9D00280FAA /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		725025E125E7688500687E79 /* QuestionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHeader.swift; sourceTree = "<group>"; };
 		7267A25C24B47C0C000F8D5A /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		727AB68324ADDD9D00280FAA /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727AB68624ADDD9D00280FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				72A9722B25E60CF10082B20D /* SingleAnswerQuestion.swift */,
+				725025E125E7688500687E79 /* QuestionHeader.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725025E225E7688500687E79 /* QuestionHeader.swift in Sources */,
 				72AC4B2424BC1FDF001AF2FC /* BasicScore.swift in Sources */,
 				727AB68724ADDD9D00280FAA /* AppDelegate.swift in Sources */,
 				72CD6C7724B30ED00061648B /* ResultsPresenter.swift in Sources */,
