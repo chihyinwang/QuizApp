@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7222D69125E8D54F008D9BDC /* SingleTextSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222D69025E8D54F008D9BDC /* SingleTextSelectionCell.swift */; };
 		725025E225E7688500687E79 /* QuestionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725025E125E7688500687E79 /* QuestionHeader.swift */; };
 		7267A25D24B47C0C000F8D5A /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7267A25C24B47C0C000F8D5A /* QuizEngine.framework */; };
 		7267A25E24B47C0C000F8D5A /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7267A25C24B47C0C000F8D5A /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -64,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7222D69025E8D54F008D9BDC /* SingleTextSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTextSelectionCell.swift; sourceTree = "<group>"; };
 		725025E125E7688500687E79 /* QuestionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHeader.swift; sourceTree = "<group>"; };
 		7267A25C24B47C0C000F8D5A /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		727AB68324ADDD9D00280FAA /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -360,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				72A9722B25E60CF10082B20D /* SingleAnswerQuestion.swift */,
+				7222D69025E8D54F008D9BDC /* SingleTextSelectionCell.swift */,
 				725025E125E7688500687E79 /* QuestionHeader.swift */,
 			);
 			path = SwiftUI;
@@ -500,6 +503,7 @@
 				72A9722C25E60CF10082B20D /* SingleAnswerQuestion.swift in Sources */,
 				72E0E77B24AF1B3000022278 /* PresentableAnswer.swift in Sources */,
 				72CD6C6D24B1B3770061648B /* ViewControllerFactory.swift in Sources */,
+				7222D69125E8D54F008D9BDC /* SingleTextSelectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
