@@ -22,8 +22,8 @@
 		72AC4B2224BC1FD1001AF2FC /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC4B2124BC1FD1001AF2FC /* ScoreTest.swift */; };
 		72AC4B2424BC1FDF001AF2FC /* BasicScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC4B2324BC1FDF001AF2FC /* BasicScore.swift */; };
 		72CD6C6D24B1B3770061648B /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C6C24B1B3770061648B /* ViewControllerFactory.swift */; };
-		72CD6C6F24B1B3AB0061648B /* iOSViewControllerFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C6E24B1B3AB0061648B /* iOSViewControllerFactoryTest.swift */; };
-		72CD6C7124B1B4530061648B /* iOSViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C7024B1B4530061648B /* iOSViewControllerFactory.swift */; };
+		72CD6C6F24B1B3AB0061648B /* iOSUIKitViewControllerFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C6E24B1B3AB0061648B /* iOSUIKitViewControllerFactoryTest.swift */; };
+		72CD6C7124B1B4530061648B /* iOSUIKitViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C7024B1B4530061648B /* iOSUIKitViewControllerFactory.swift */; };
 		72CD6C7324B30CFB0061648B /* ResultsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C7224B30CFB0061648B /* ResultsPresenterTest.swift */; };
 		72CD6C7724B30ED00061648B /* ResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C7624B30ED00061648B /* ResultsPresenter.swift */; };
 		72CD6C7924B32BA40061648B /* QuestionPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD6C7824B32BA40061648B /* QuestionPresenterTest.swift */; };
@@ -83,8 +83,8 @@
 		72AC4B2124BC1FD1001AF2FC /* ScoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
 		72AC4B2324BC1FDF001AF2FC /* BasicScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicScore.swift; sourceTree = "<group>"; };
 		72CD6C6C24B1B3770061648B /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		72CD6C6E24B1B3AB0061648B /* iOSViewControllerFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViewControllerFactoryTest.swift; sourceTree = "<group>"; };
-		72CD6C7024B1B4530061648B /* iOSViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViewControllerFactory.swift; sourceTree = "<group>"; };
+		72CD6C6E24B1B3AB0061648B /* iOSUIKitViewControllerFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUIKitViewControllerFactoryTest.swift; sourceTree = "<group>"; };
+		72CD6C7024B1B4530061648B /* iOSUIKitViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUIKitViewControllerFactory.swift; sourceTree = "<group>"; };
 		72CD6C7224B30CFB0061648B /* ResultsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenterTest.swift; sourceTree = "<group>"; };
 		72CD6C7624B30ED00061648B /* ResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenter.swift; sourceTree = "<group>"; };
 		72CD6C7824B32BA40061648B /* QuestionPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTest.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 			children = (
 				727AB68624ADDD9D00280FAA /* AppDelegate.swift */,
 				727AB68824ADDD9D00280FAA /* SceneDelegate.swift */,
-				72CD6C7024B1B4530061648B /* iOSViewControllerFactory.swift */,
+				72CD6C7024B1B4530061648B /* iOSUIKitViewControllerFactory.swift */,
 				727AB69124ADDDA000280FAA /* LaunchScreen.storyboard */,
 				727AB68F24ADDDA000280FAA /* Assets.xcassets */,
 			);
@@ -207,7 +207,7 @@
 		7239F8F324B4731000659031 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				72CD6C6E24B1B3AB0061648B /* iOSViewControllerFactoryTest.swift */,
+				72CD6C6E24B1B3AB0061648B /* iOSUIKitViewControllerFactoryTest.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -497,7 +497,7 @@
 				727AB6AB24ADE3C900280FAA /* QuestionViewController.swift in Sources */,
 				72E0E77724AF1AFF00022278 /* CorrectAnswerCell.swift in Sources */,
 				72CD6C7B24B32C110061648B /* QuestionPresenter.swift in Sources */,
-				72CD6C7124B1B4530061648B /* iOSViewControllerFactory.swift in Sources */,
+				72CD6C7124B1B4530061648B /* iOSUIKitViewControllerFactory.swift in Sources */,
 				72E0E7B924B0828E00022278 /* NavigationControllerRouter.swift in Sources */,
 				72E0E77124AF002D00022278 /* ResultsViewController.swift in Sources */,
 				72A9722C25E60CF10082B20D /* SingleAnswerQuestion.swift in Sources */,
@@ -518,7 +518,7 @@
 				72CD6C7924B32BA40061648B /* QuestionPresenterTest.swift in Sources */,
 				72E0E77324AF06CD00022278 /* TableViewHelpers.swift in Sources */,
 				72E0E76F24AEFFB600022278 /* ResultsViewControllerTest.swift in Sources */,
-				72CD6C6F24B1B3AB0061648B /* iOSViewControllerFactoryTest.swift in Sources */,
+				72CD6C6F24B1B3AB0061648B /* iOSUIKitViewControllerFactoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,4 @@
 //
-//  iOSViewControllerFactoryTest.swift
-//  QuizAppTests
-//
-//  Created by chihyin wang on 2020/7/5.
 //  Copyright © 2020 chihyinwang. All rights reserved.
 //
 
@@ -11,7 +7,7 @@ import XCTest
 import QuizEngine
 @testable import QuizApp
 
-class iOSViewControllerFactoryTest: XCTestCase {
+class iOSUIKitViewControllerFactoryTest: XCTestCase {
 
     func test_questionViewController_singleAnswer_createsControllerWithTitle() {
         let presenter = QuestionPresenter(questions: questions, question: singleAnswerQuestion)
@@ -99,8 +95,8 @@ class iOSViewControllerFactoryTest: XCTestCase {
         [(singleAnswerQuestion, ["A1"]), (multipleAnswerQuestion, ["A4", "A5"])]
     }
 
-    private func makeSUT() -> iOSViewControllerFactory {
-        return iOSViewControllerFactory(options: options, correctAnswers: correctAnswers)
+    private func makeSUT() -> iOSUIKitViewControllerFactory {
+        return iOSUIKitViewControllerFactory(options: options, correctAnswers: correctAnswers)
     }
     
     private func makeQuestionController(
