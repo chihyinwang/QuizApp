@@ -2,7 +2,6 @@
 //  Copyright © 2020 chihyinwang. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import QuizEngine
 
