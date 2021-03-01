@@ -2,6 +2,7 @@
 // Copyright © 2021 chihyinwang. All rights reserved.
 //
 
+import SwiftUI
 import UIKit
 import QuizEngine
 
@@ -31,14 +32,19 @@ final class iOSSwiftUIViewControllerFactory: ViewControllerFactory {
     private func questionViewController(for question: Question<String>, options: [String], answerCallback: @escaping ([String]) -> Void) -> UIViewController {
         switch question {
         case .singleAnswer(let value):
-            return questionViewController(question: question, questionValue: value, options: options, allowsMultipleSelection: false, answerCallback: answerCallback)
+            let presenter = QuestionPresenter(questions: questions, question: question)
+            return UIHostingController(
+                rootView: SingleAnswerQuestion(
+                    title: presenter.title,
+                    question: value,
+                    options: options,
+                    selection: { _ in }))
         case .multipleAnswer(let value):
             return questionViewController(question: question, questionValue: value, options: options, allowsMultipleSelection: true, answerCallback: answerCallback)
         }
     }
     
     private func questionViewController(question: Question<String>, questionValue: String, options: [String], allowsMultipleSelection: Bool, answerCallback: @escaping ([String]) -> Void) -> QuestionViewController {
-        
         let presenter = QuestionPresenter(questions: questions, question: question)
         let controller = QuestionViewController(question: questionValue, options: options, allowsMultipleSelection: allowsMultipleSelection, selection: answerCallback)
         controller.title = presenter.title
