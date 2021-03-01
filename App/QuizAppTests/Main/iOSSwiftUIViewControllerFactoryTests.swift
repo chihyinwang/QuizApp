@@ -28,7 +28,20 @@ class iOSSwiftUIViewControllerFactoryTest: XCTestCase {
 
         XCTAssertEqual(view.options, options[singleAnswerQuestion])
     }
-
+    
+    func test_questionViewController_singleAnswer_createsControllerWithAnswerCallback() throws {
+        var answers = [[String]]()
+        let view = try XCTUnwrap(makeSingleAnswerQuestion(answerCallback: { answers.append($0) }))
+        
+        XCTAssertEqual(answers, [])
+        
+        view.selection(view.options[0])
+        XCTAssertEqual(answers, [[view.options[0]]])
+        
+        view.selection(view.options[1])
+        XCTAssertEqual(answers, [[view.options[0]], [view.options[1]]])
+    }
+    
     func test_questionViewController_multipleAnswer_createsControllerWithTitle() {
         let presenter = QuestionPresenter(questions: questions, question: multipleAnswerQuestion)
         let controller = makeQuestionController(question: multipleAnswerQuestion)

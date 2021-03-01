@@ -38,7 +38,8 @@ final class iOSSwiftUIViewControllerFactory: ViewControllerFactory {
                     title: presenter.title,
                     question: value,
                     options: options,
-                    selection: { _ in }))
+                    selection: { answerCallback([$0]) }))
+            
         case .multipleAnswer(let value):
             return questionViewController(question: question, questionValue: value, options: options, allowsMultipleSelection: true, answerCallback: answerCallback)
         }
