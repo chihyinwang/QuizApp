@@ -6,7 +6,6 @@
 //  Copyright © 2020 chihyinwang. All rights reserved.
 //
 
-import Foundation
 import QuizEngine
 
 struct QuestionPresenter {
@@ -16,6 +15,6 @@ struct QuestionPresenter {
     var title: String {
         guard let index = questions.firstIndex(of: question) else { return "" }
         
-        return "Question #\(index + 1)"
+        return "\(index + 1) of \(questions.count)"
     }
 }

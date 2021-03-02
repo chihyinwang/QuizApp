@@ -1,8 +1,4 @@
 //
-//  SceneDelegate.swift
-//  QuizApp
-//
-//  Created by chihyin wang on 2020/7/2.
 //  Copyright © 2020 chihyinwang. All rights reserved.
 //
 
@@ -37,7 +33,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let correctAnswers = [(question1, [option103]), (question2, [option201, option202, option204])]
         
         let navigationController = UINavigationController()
-        let factory = iOSViewControllerFactory(options: options, correctAnswers: correctAnswers)
+        let factory = iOSSwiftUIViewControllerFactory(options: options, correctAnswers: correctAnswers)
         let router = NavigationControllerRouter(navigationController, factory: factory)
         
         quiz = Quiz.start(questions: questions, delegate: router)
@@ -46,7 +42,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
         window.makeKeyAndVisible()
     }
-
-
 }
 
