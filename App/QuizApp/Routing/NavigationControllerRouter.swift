@@ -1,8 +1,4 @@
 //
-//  NavigationControllerRouter.swift
-//  QuizApp
-//
-//  Created by chihyin wang on 2020/7/4.
 //  Copyright © 2020 chihyinwang. All rights reserved.
 //
 
