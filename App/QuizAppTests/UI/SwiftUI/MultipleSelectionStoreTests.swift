@@ -23,7 +23,7 @@ struct MultipleSelectionOption {
 
 class MultipleSelectionStoreTests: XCTestCase {
     
-    func test_() {
+    func test_selectionOption_toggleState() {
         var sut = MultipleSelectionStore(options: ["o0", "o1"])
         XCTAssertFalse(sut.options[0].isSelected)
 
