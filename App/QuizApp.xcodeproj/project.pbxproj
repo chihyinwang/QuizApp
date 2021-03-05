@@ -15,6 +15,8 @@
 		7277C15625EC87D200853B41 /* iOSSwiftUIViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7277C15525EC87D200853B41 /* iOSSwiftUIViewControllerFactory.swift */; };
 		7277C15C25EFC87000853B41 /* MultipleSelectionStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7277C15B25EFC87000853B41 /* MultipleSelectionStoreTests.swift */; };
 		7277C16025F07D3C00853B41 /* MultipleSelectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7277C15F25F07D3C00853B41 /* MultipleSelectionStore.swift */; };
+		7277C16325F07DE000853B41 /* MultipleAnswerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7277C16225F07DE000853B41 /* MultipleAnswerQuestion.swift */; };
+		7277C16625F07E3A00853B41 /* MultipleTextSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7277C16525F07E3A00853B41 /* MultipleTextSelectionCell.swift */; };
 		727AB68724ADDD9D00280FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB68624ADDD9D00280FAA /* AppDelegate.swift */; };
 		727AB68924ADDD9D00280FAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AB68824ADDD9D00280FAA /* SceneDelegate.swift */; };
 		727AB69024ADDDA000280FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727AB68F24ADDDA000280FAA /* Assets.xcassets */; };
@@ -76,6 +78,8 @@
 		7277C15525EC87D200853B41 /* iOSSwiftUIViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftUIViewControllerFactory.swift; sourceTree = "<group>"; };
 		7277C15B25EFC87000853B41 /* MultipleSelectionStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionStoreTests.swift; sourceTree = "<group>"; };
 		7277C15F25F07D3C00853B41 /* MultipleSelectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionStore.swift; sourceTree = "<group>"; };
+		7277C16225F07DE000853B41 /* MultipleAnswerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleAnswerQuestion.swift; sourceTree = "<group>"; };
+		7277C16525F07E3A00853B41 /* MultipleTextSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTextSelectionCell.swift; sourceTree = "<group>"; };
 		727AB68324ADDD9D00280FAA /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727AB68624ADDD9D00280FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		727AB68824ADDD9D00280FAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -384,6 +388,8 @@
 				7222D69025E8D54F008D9BDC /* SingleTextSelectionCell.swift */,
 				725025E125E7688500687E79 /* QuestionHeader.swift */,
 				7277C15F25F07D3C00853B41 /* MultipleSelectionStore.swift */,
+				7277C16225F07DE000853B41 /* MultipleAnswerQuestion.swift */,
+				7277C16525F07E3A00853B41 /* MultipleTextSelectionCell.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -510,6 +516,7 @@
 				725025E225E7688500687E79 /* QuestionHeader.swift in Sources */,
 				72AC4B2424BC1FDF001AF2FC /* BasicScore.swift in Sources */,
 				727AB68724ADDD9D00280FAA /* AppDelegate.swift in Sources */,
+				7277C16625F07E3A00853B41 /* MultipleTextSelectionCell.swift in Sources */,
 				72CD6C7724B30ED00061648B /* ResultsPresenter.swift in Sources */,
 				72E0E77924AF1B1100022278 /* WrongAnswerCell.swift in Sources */,
 				727AB68924ADDD9D00280FAA /* SceneDelegate.swift in Sources */,
@@ -526,6 +533,7 @@
 				7277C15625EC87D200853B41 /* iOSSwiftUIViewControllerFactory.swift in Sources */,
 				72CD6C6D24B1B3770061648B /* ViewControllerFactory.swift in Sources */,
 				7222D69125E8D54F008D9BDC /* SingleTextSelectionCell.swift in Sources */,
+				7277C16325F07DE000853B41 /* MultipleAnswerQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
