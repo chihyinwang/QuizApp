@@ -1,8 +1,4 @@
 //
-//  ResultsPresenter.swift
-//  QuizApp
-//
-//  Created by chihyin wang on 2020/7/6.
 //  Copyright © 2020 chihyinwang. All rights reserved.
 //
 
