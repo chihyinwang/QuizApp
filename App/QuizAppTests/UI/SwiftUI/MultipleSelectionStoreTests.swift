@@ -8,7 +8,7 @@ import XCTest
 class MultipleSelectionStoreTests: XCTestCase {
     
     func test_toggleSelection_togglesOptionsSelectionState() {
-        var sut = MultipleSelectionStore(options: ["o0", "o1"])
+        var sut = makeSUT(options: ["o0", "o1"])
         XCTAssertFalse(sut.options[0].isSelected)
 
         sut.options[0].toggleSelection()
@@ -19,7 +19,7 @@ class MultipleSelectionStoreTests: XCTestCase {
     }
     
     func test_canSubmit_whenAtLeastOneOptionIsSelected() {
-        var sut = MultipleSelectionStore(options: ["o0", "o1"])
+        var sut = makeSUT(options: ["o0", "o1"])
         XCTAssertFalse(sut.canSubmit)
 
         sut.options[0].toggleSelection()
@@ -34,7 +34,7 @@ class MultipleSelectionStoreTests: XCTestCase {
     
     func test_submit_notifiesHandlerWithSelectedOptions() {
         var submittedOptions = [[String]]()
-        var sut = MultipleSelectionStore(options: ["o0", "o1"], handler: {
+        var sut = makeSUT(options: ["o0", "o1"], handler: {
             submittedOptions.append($0)
         })
         
@@ -48,5 +48,11 @@ class MultipleSelectionStoreTests: XCTestCase {
         sut.options[1].toggleSelection()
         sut.submit()
         XCTAssertEqual(submittedOptions, [["o0"], ["o0", "o1"]])
+    }
+    
+    // MARK: - Helpers
+    
+    private func makeSUT(options: [String], handler: @escaping ([String]) -> Void = { _ in }) -> MultipleSelectionStore {
+        MultipleSelectionStore(options: options, handler: handler)
     }
 }
