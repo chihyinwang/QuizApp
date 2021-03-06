@@ -60,7 +60,9 @@ struct MultipleAnswerQuestion_Previews: PreviewProvider {
                         options: [
                             "Maroon",
                             "Navy",
-                            "Black"
+                            "Black",
+                            "Pink",
+                            "Dark green"
                         ], handler: { selection = $0 }
                 ))
                 
