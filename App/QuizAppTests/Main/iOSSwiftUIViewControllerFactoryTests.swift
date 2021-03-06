@@ -8,7 +8,7 @@ import XCTest
 import QuizEngine
 @testable import QuizApp
 
-class iOSSwiftUIViewControllerFactoryTest: XCTestCase {
+class iOSSwiftUIViewControllerFactoryTests: XCTestCase {
 
     func test_questionViewController_singleAnswer_createsControllerWithTitle() throws {
         let presenter = QuestionPresenter(questions: questions, question: singleAnswerQuestion)
