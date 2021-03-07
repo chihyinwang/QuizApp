@@ -19,20 +19,12 @@ struct MultipleAnswerQuestion: View {
             
             Spacer()
             
-            Button(action: store.submit, label: {
-                HStack {
-                    Spacer()
-                    Text("Submit")
-                        .padding()
-                        .foregroundColor(.white)
-                    Spacer()
-                }
-                .background(Color.blue)
-                .cornerRadius(25)
-            })
-            .buttonStyle(PlainButtonStyle())
+            RoundedButton(
+                title: "Submit",
+                isEnabled: store.canSubmit,
+                action: store.submit
+            )
             .padding()
-            .disabled(!store.canSubmit)
         }
     }
 }
