@@ -388,6 +388,7 @@
 			children = (
 				72C90EA825F4651000755D3D /* Helpers */,
 				72C90EA725F464D000755D3D /* Question */,
+				72C90EAD25F4660500755D3D /* Result */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -427,6 +428,13 @@
 				72C90EA925F4653000755D3D /* RoundedButton.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		72C90EAD25F4660500755D3D /* Result */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
