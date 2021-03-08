@@ -15,20 +15,7 @@ struct ResultView: View {
             HeaderView(title: title, subtitle: summary)
             
             List(answers, id: \.question) { model in
-                VStack(alignment: .leading, spacing: 0.0) {
-                    Text(model.question)
-                        .font(.title)
-                    
-                    Text(model.answer)
-                        .font(.headline)
-                        .foregroundColor(.green)
-                    
-                    if let wrongAnswer = model.wrongAnswer {
-                        Text(wrongAnswer)
-                            .font(.headline)
-                            .foregroundColor(.red)
-                    }
-                }.padding(.vertical)
+                ResultAnswerCell(model: model)
             }
             
             Spacer()
@@ -42,6 +29,7 @@ struct ResultView: View {
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
         ResultTestView()
+        
         ResultTestView()
             .preferredColorScheme(.dark)
             .environment(\.sizeCategory, .extraExtraExtraLarge)
