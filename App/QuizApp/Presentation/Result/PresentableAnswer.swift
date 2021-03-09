@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct PresentableAnswer {
+struct PresentableAnswer: Equatable {
     var question: String
     var answer: String
     var wrongAnswer: String?
