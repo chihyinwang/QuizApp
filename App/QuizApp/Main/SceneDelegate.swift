@@ -42,10 +42,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let options = [question1: options1, question2: options2]
         let correctAnswers = [(question1, [option103]), (question2, [option201, option202, option204])]
         
-        let factory = iOSSwiftUIViewControllerFactory(options: options, correctAnswers: correctAnswers, playAgain: startNewQuiz)
-        let router = NavigationControllerRouter(navigationController, factory: factory)
+        let adapter = iOSSwiftUINavigationAdapter(
+            navigation: navigationController,
+            options: options,
+            correctAnswers: correctAnswers,
+            playAgain: startNewQuiz)
         
-        quiz = Quiz.start(questions: questions, delegate: router)
+        quiz = Quiz.start(questions: questions, delegate: adapter)
     }
 }
 
