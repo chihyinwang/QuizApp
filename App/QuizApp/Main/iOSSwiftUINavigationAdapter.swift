@@ -28,12 +28,14 @@ final class iOSSwiftUINavigationAdapter: QuizDelegate {
     }
     
     func answer(for question: Question, completion: @escaping (Answer) -> Void) {
-        let controller = questionViewController(for: question, answerCallback: completion)
-        navigation.pushViewController(controller, animated: true)
+        show(questionViewController(for: question, answerCallback: completion))
     }
     
     func didCompleteQuiz(withAnswers answers: Answers) {
-        let controller = resultsViewController(for: answers)
+        show(resultsViewController(for: answers))
+    }
+    
+    private func show(_ controller: UIViewController) {
         navigation.pushViewController(controller, animated: true)
     }
     
