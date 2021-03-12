@@ -1,8 +1,4 @@
 //
-//  Flow.swift
-//  QuizEngine
-//
-//  Created by chihyin wang on 2020/6/26.
 //  Copyright © 2020 chihyinwang. All rights reserved.
 //
 

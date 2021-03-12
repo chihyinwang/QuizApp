@@ -1,8 +1,4 @@
 //
-//  DelegateSpy.swift
-//  QuizEngineTests
-//
-//  Created by chihyin wang on 2020/7/12.
 //  Copyright © 2020 chihyinwang. All rights reserved.
 //
 
