@@ -1,8 +1,4 @@
 //
-//  QuestionPresenterTest.swift
-//  QuizAppTests
-//
-//  Created by chihyin wang on 2020/7/6.
 //  Copyright © 2020 chihyinwang. All rights reserved.
 //
 
@@ -11,7 +7,6 @@ import QuizEngine
 @testable import QuizApp
 
 class QuestionPresenterTest: XCTestCase {
-
     let question1 = Question.singleAnswer("Q1")
     let question2 = Question.multipleAnswer("Q2")
     
@@ -32,5 +27,4 @@ class QuestionPresenterTest: XCTestCase {
         
         XCTAssertEqual(sut.title, "")
     }
-    
 }

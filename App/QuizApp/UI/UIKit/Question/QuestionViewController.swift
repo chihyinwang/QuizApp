@@ -1,15 +1,10 @@
 //
-//  QuestionViewController.swift
-//  QuizApp
-//
-//  Created by chihyin wang on 2020/7/2.
 //  Copyright © 2020 chihyinwang. All rights reserved.
 //
 
 import UIKit
 
 class QuestionViewController: UITableViewController {
-    
     var headerLabel = UILabel()
     private(set) var question: String = ""
     private(set) var options: [String] = []
