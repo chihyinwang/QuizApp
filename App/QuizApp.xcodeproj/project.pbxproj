@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7222D69125E8D54F008D9BDC /* SingleTextSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222D69025E8D54F008D9BDC /* SingleTextSelectionCell.swift */; };
+		7235002B26009E4D00C22971 /* QuizNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235002A26009E4D00C22971 /* QuizNavigationView.swift */; };
 		725025E225E7688500687E79 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725025E125E7688500687E79 /* HeaderView.swift */; };
 		7267A25D24B47C0C000F8D5A /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7267A25C24B47C0C000F8D5A /* QuizEngine.framework */; };
 		7267A25E24B47C0C000F8D5A /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7267A25C24B47C0C000F8D5A /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		7222D69025E8D54F008D9BDC /* SingleTextSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTextSelectionCell.swift; sourceTree = "<group>"; };
+		7235002A26009E4D00C22971 /* QuizNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizNavigationView.swift; sourceTree = "<group>"; };
 		725025E125E7688500687E79 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		7267A25C24B47C0C000F8D5A /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7277C15225EC878F00853B41 /* iOSSwiftUINavigationAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftUINavigationAdapterTests.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 				72C90EA825F4651000755D3D /* Helpers */,
 				72C90EA725F464D000755D3D /* Question */,
 				72C90EAD25F4660500755D3D /* Result */,
+				7235002A26009E4D00C22971 /* QuizNavigationView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				728E983625F5CCBE007F89C8 /* ResultAnswerCell.swift in Sources */,
+				7235002B26009E4D00C22971 /* QuizNavigationView.swift in Sources */,
 				725025E225E7688500687E79 /* HeaderView.swift in Sources */,
 				72AC4B2424BC1FDF001AF2FC /* BasicScore.swift in Sources */,
 				728E983325F5C235007F89C8 /* ResultView.swift in Sources */,
