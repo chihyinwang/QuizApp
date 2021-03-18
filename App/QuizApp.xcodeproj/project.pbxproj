@@ -48,6 +48,7 @@
 		72E0E78124AF1F0800022278 /* WrongAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E0E78024AF1F0800022278 /* WrongAnswerCell.xib */; };
 		72E0E7B724B07C3F00022278 /* NavigationControllerRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7B624B07C3F00022278 /* NavigationControllerRouterTest.swift */; };
 		72E0E7B924B0828E00022278 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7B824B0828E00022278 /* NavigationControllerRouter.swift */; };
+		72E90716260307140043B7FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E90715260307140043B7FD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		72E0E78024AF1F0800022278 /* WrongAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongAnswerCell.xib; sourceTree = "<group>"; };
 		72E0E7B624B07C3F00022278 /* NavigationControllerRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTest.swift; sourceTree = "<group>"; };
 		72E0E7B824B0828E00022278 /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
+		72E90715260307140043B7FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				72005AF62600AA21006A33FF /* QuizApp.swift */,
+				72E90715260307140043B7FD /* AppDelegate.swift */,
 				72005AF92600AA49006A33FF /* DemoQuizData.swift */,
 				72CD6C7024B1B4530061648B /* iOSUIKitViewControllerFactory.swift */,
 				7277C15525EC87D200853B41 /* iOSSwiftUINavigationAdapter.swift */,
@@ -557,6 +560,7 @@
 				7277C16625F07E3A00853B41 /* MultipleTextSelectionCell.swift in Sources */,
 				72005AFA2600AA49006A33FF /* DemoQuizData.swift in Sources */,
 				72CD6C7724B30ED00061648B /* ResultsPresenter.swift in Sources */,
+				72E90716260307140043B7FD /* AppDelegate.swift in Sources */,
 				72E0E77924AF1B1100022278 /* WrongAnswerCell.swift in Sources */,
 				72A9722225E48E480082B20D /* UITableViewExtension.swift in Sources */,
 				727AB6AB24ADE3C900280FAA /* QuestionViewController.swift in Sources */,
