@@ -49,6 +49,7 @@
 		72E0E7B724B07C3F00022278 /* NavigationControllerRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7B624B07C3F00022278 /* NavigationControllerRouterTest.swift */; };
 		72E0E7B924B0828E00022278 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0E7B824B0828E00022278 /* NavigationControllerRouter.swift */; };
 		72E90716260307140043B7FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E90715260307140043B7FD /* AppDelegate.swift */; };
+		72E9071A26049F3D0043B7FD /* BasicQuizBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E9071926049F3D0043B7FD /* BasicQuizBuilderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		72E0E7B624B07C3F00022278 /* NavigationControllerRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTest.swift; sourceTree = "<group>"; };
 		72E0E7B824B0828E00022278 /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
 		72E90715260307140043B7FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72E9071926049F3D0043B7FD /* BasicQuizBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicQuizBuilderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				72AC4B2124BC1FD1001AF2FC /* ScoreTest.swift */,
+				72E9071926049F3D0043B7FD /* BasicQuizBuilderTests.swift */,
 			);
 			path = Scoring;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				72CD6C7324B30CFB0061648B /* ResultsPresenterTest.swift in Sources */,
 				7277C15325EC878F00853B41 /* iOSSwiftUINavigationAdapterTests.swift in Sources */,
 				72E0E7B724B07C3F00022278 /* NavigationControllerRouterTest.swift in Sources */,
+				72E9071A26049F3D0043B7FD /* BasicQuizBuilderTests.swift in Sources */,
 				727AB6A924ADE2E800280FAA /* QuestionViewControllerTest.swift in Sources */,
 				72AC4B2224BC1FD1001AF2FC /* ScoreTest.swift in Sources */,
 				72CD6C7924B32BA40061648B /* QuestionPresenterTest.swift in Sources */,
