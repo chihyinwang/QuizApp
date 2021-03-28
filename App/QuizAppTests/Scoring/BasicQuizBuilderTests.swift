@@ -42,28 +42,7 @@ struct BasicQuizBuilder {
     }
     
     mutating func add(singleAnswerQuestion: String, options: NonEmptyOptions, answer: String) throws {
-        let question = Question.singleAnswer(singleAnswerQuestion)
-
-        guard !questions.contains(question) else {
-            throw AddingError.duplicateQuestion(question)
-        }
-        
-        let allOptions = options.all
-
-        guard allOptions.contains(answer) else {
-            throw AddingError.missingAnswerInOptions(answer: [answer], options: allOptions)
-        }
-
-        guard Set(allOptions).count == allOptions.count else {
-            throw AddingError.duplicateOptions(allOptions)
-        }
-
-        var newOptions = self.options
-        newOptions[question] = allOptions
-        
-        self.questions += [question]
-        self.options = newOptions
-        self.correctAnswers += [(question, [answer])]
+        self = try adding(singleAnswerQuestion: singleAnswerQuestion, options: options, answer: answer)
     }
     
     func adding(singleAnswerQuestion: String, options: NonEmptyOptions, answer: String) throws -> BasicQuizBuilder {
