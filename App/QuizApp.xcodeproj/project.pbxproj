@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		72005AF72600AA21006A33FF /* QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72005AF62600AA21006A33FF /* QuizApp.swift */; };
 		72005AFA2600AA49006A33FF /* DemoQuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72005AF92600AA49006A33FF /* DemoQuizData.swift */; };
+		721BFD0E26130D6E00691C43 /* BasicQuizBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721BFD0D26130D6E00691C43 /* BasicQuizBuilder.swift */; };
 		7222D69125E8D54F008D9BDC /* SingleTextSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222D69025E8D54F008D9BDC /* SingleTextSelectionCell.swift */; };
 		7235002B26009E4D00C22971 /* QuizNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235002A26009E4D00C22971 /* QuizNavigationView.swift */; };
 		725025E225E7688500687E79 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725025E125E7688500687E79 /* HeaderView.swift */; };
@@ -79,6 +80,7 @@
 /* Begin PBXFileReference section */
 		72005AF62600AA21006A33FF /* QuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizApp.swift; sourceTree = "<group>"; };
 		72005AF92600AA49006A33FF /* DemoQuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoQuizData.swift; sourceTree = "<group>"; };
+		721BFD0D26130D6E00691C43 /* BasicQuizBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicQuizBuilder.swift; sourceTree = "<group>"; };
 		7222D69025E8D54F008D9BDC /* SingleTextSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTextSelectionCell.swift; sourceTree = "<group>"; };
 		7235002A26009E4D00C22971 /* QuizNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizNavigationView.swift; sourceTree = "<group>"; };
 		725025E125E7688500687E79 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				72005AF62600AA21006A33FF /* QuizApp.swift */,
 				72E90715260307140043B7FD /* AppDelegate.swift */,
 				72005AF92600AA49006A33FF /* DemoQuizData.swift */,
+				721BFD0D26130D6E00691C43 /* BasicQuizBuilder.swift */,
 				72CD6C7024B1B4530061648B /* iOSUIKitViewControllerFactory.swift */,
 				7277C15525EC87D200853B41 /* iOSSwiftUINavigationAdapter.swift */,
 				727AB69124ADDDA000280FAA /* LaunchScreen.storyboard */,
@@ -560,6 +563,7 @@
 				725025E225E7688500687E79 /* HeaderView.swift in Sources */,
 				72AC4B2424BC1FDF001AF2FC /* BasicScore.swift in Sources */,
 				728E983325F5C235007F89C8 /* ResultView.swift in Sources */,
+				721BFD0E26130D6E00691C43 /* BasicQuizBuilder.swift in Sources */,
 				7277C16625F07E3A00853B41 /* MultipleTextSelectionCell.swift in Sources */,
 				72005AFA2600AA49006A33FF /* DemoQuizData.swift in Sources */,
 				72CD6C7724B30ED00061648B /* ResultsPresenter.swift in Sources */,
