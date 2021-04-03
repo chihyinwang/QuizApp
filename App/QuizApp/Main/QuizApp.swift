@@ -22,10 +22,10 @@ struct QuizApp: App {
     private func startNewQuiz() {
         let adapter = iOSSwiftUINavigationAdapter(
             navigation: navigationStore,
-            options: options,
-            correctAnswers: correctAnswers,
+            options: demoQuiz.options,
+            correctAnswers: demoQuiz.correctAnswers,
             playAgain: startNewQuiz)
 
-        quiz = Quiz.start(questions: questions, delegate: adapter)
+        quiz = Quiz.start(questions: demoQuiz.questions, delegate: adapter)
     }
 }
